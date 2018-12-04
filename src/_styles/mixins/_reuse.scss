@@ -158,3 +158,19 @@
         }
     }
 }
+
+@mixin img($ratio: 56.5%, $width: 100%, $imgheight: auto, $imgwidth: 100%) {
+    position: relative;
+    width: $width;
+    overflow: hidden;
+    padding-bottom: $ratio;
+    height: 0;
+
+    img {
+        position: absolute;
+        width: $imgwidth;
+        height: $imgheight;
+        left: 0;
+        top: 0;
+    }
+}

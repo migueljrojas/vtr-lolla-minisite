@@ -1,3 +1,165 @@
 .home {
-    
+    overflow: hidden;
+    position: relative;
+
+    &__wrapper {
+        @include mq(sm) {
+            display: flex;
+            width: 120%;
+            transform: translateX(-10vw);
+        }
+    }
+
+    &__col {
+        position: relative;
+        height: 14.29vh;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+
+        @include mq(sm) {
+            padding-left: 0;
+            display: block;
+            height: 100vh;
+            width: 14.29%;
+            transform: skewX(-8deg);
+
+            &:first-child {
+                @include mq(sm) {
+                    width: 25%;
+                }
+            }
+
+            &:last-child {
+                @include mq(sm) {
+                    width: 25%;
+                }
+            }
+        }
+
+        &:hover {
+            
+        }
+
+        &:nth-child(1) {
+            background: $fucsia;
+        }
+
+        &:nth-child(2) {
+            background: $magenta;
+        }
+
+        &:nth-child(3) {
+            background: $turqoise;
+        }
+
+        &:nth-child(4) {
+            background: $blue;
+        }
+
+        &:nth-child(5) {
+            background: $cyan;
+        }
+
+        &:nth-child(6) {
+            background: $gold;
+        }
+
+        &:nth-child(7) {
+            background: $lemon;
+        }
+
+        &__title-text {
+            color: $white;
+            font-size: 32px;
+            text-transform: uppercase;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+            @include mq(sm) {
+                display: none;
+            }
+        }
+
+        &__layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: url('../images/home/wave-back.png') no-repeat center;
+            mix-blend-mode: overlay;
+            opacity: .5;
+
+            @include mq(sm) {
+                background-size: 300%;
+                background: url('../images/home/wave-back.png') no-repeat bottom;
+            }
+
+            &--resize {
+                @include mq(sm) {
+                    background-size: 172%;
+                }
+            }
+        }
+
+        &__title-image {
+            display: none;
+
+            @include mq(sm) {
+                display: block;
+            }
+
+            img {
+                @include mq(sm) {
+                    position: absolute;
+                    bottom: 5%;
+                    right: 0;
+                    height: auto;
+                    width: auto;
+                    transform: skewX(8deg);
+                    max-height: 55vh;
+                }
+            }
+
+            &--image-position {
+                img {
+                    @include mq(sm) {
+                        left: 20%;
+                        right: auto;
+                    }
+                }
+            }
+        }
+
+        &__icon {
+            img {
+                position: absolute;
+                right: 5%;
+                top: 10%;
+                max-height: 100px;
+                max-width: 100px;
+                transform: rotate(90deg);
+
+                @include mq(sm) {
+
+                    top: 10%;
+                    right: -20%;
+                    height: auto;
+                    transform: skewX(8deg) rotate(0deg);
+                    max-width: 100%;
+                    max-height: 100vh;
+                }
+            }
+
+            &--icon-position {
+                img {
+                    @include mq(sm) {
+                        right: 32%;
+                        max-width: 58%;
+                        max-height: 58vh;
+                    }
+                }
+            }
+        }
+    }
 }
