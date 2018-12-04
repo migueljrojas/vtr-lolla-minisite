@@ -26,7 +26,7 @@
         &--loolla {
             img {
                 position: absolute;
-                top: 10%;
+                top: 25%;
                 left: 7%;
                 bottom: 0;
                 right: 0;
@@ -47,6 +47,8 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         margin: 0;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     &__social {
@@ -56,6 +58,10 @@
         li {
             margin-left: 20px;
             font-size: 20px;
+        }
+
+        i {
+            cursor: pointer;
         }
     }
 

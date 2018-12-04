@@ -1,0 +1,99 @@
+.catalogo {
+    background: url('../images/catalogo/back.jpg') no-repeat;
+    background-size: cover;
+
+    &__container {
+        padding: 100px 20px;
+
+        @include mq(sm) {
+            padding: 100px;
+        }
+    }
+
+    &__heading {
+        @include mq(sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                width: 70%;
+                padding-right: 40px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__vod-image {
+        margin-bottom: 20px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    &__text {
+        font-weight: 500;
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__remote-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__bands {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__band {
+        max-width: 170px;
+        width: 45%;
+        padding-top: 20px;
+
+        &__image {
+            margin-bottom: 5px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__name {
+            color: $white;
+            margin: 0;
+            font-family: $altFont;
+            margin-bottom: 5px;
+        }
+
+        &__event {
+            color: $white;
+            font-family: $altFont;
+        }
+    }
+}

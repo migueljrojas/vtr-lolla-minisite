@@ -16,6 +16,17 @@ var Header = function() {
         header.removeClass('-open');
         body.removeClass('-hideOverflow');
     });
+
+    var columns = $('.home__col');
+
+    columns.on('click', function(e) {
+        e.preventDefault();
+
+        setTimeout(function(){
+            window.location.href = '/catalogo';
+        }, 3000);
+    })
+
 };
 
 module.exports = Header;

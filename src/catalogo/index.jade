@@ -1,0 +1,26 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.catalogo
+        .catalogo__container
+            .catalogo__heading
+                .catalogo__col
+                    .catalogo__vod-image
+                        img(src="../images/catalogo/logo.png")
+                    .catalogo__subtitle revive lollapalooza chile en vod de vtr
+                    .catalogo__text presiona el botón vod de tu control vtr y revive los conciertos de las bandas que ua nos hicieron vibrar en lolla desde la comodidad de tu casa
+                .catalogo__col
+                    .catalogo__remote-image
+                        img(src="../images/catalogo/remote.png")
+            .catalogo__bands
+                each item in site.data.catalogo
+                    .catalogo__band
+                        .catalogo__band__image
+                            img(src=item.url)
+                        p.catalogo__band__name=item.name
+                        p.catalogo__band__event Lollapalooza 2018
+                

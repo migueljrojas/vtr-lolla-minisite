@@ -1,3 +1,36 @@
 .footer {
-    
+    background: $black;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    padding: 25px 150px;
+    position: relative;
+
+    @include mq(sm) {
+        height: auto;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    &__social {
+        display: none;
+
+        @include mq(sm) {
+            display: flex;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        i {
+            color: $white;
+            font-size: 30px;
+        }
+    }
 }

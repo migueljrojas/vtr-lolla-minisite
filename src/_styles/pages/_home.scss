@@ -11,6 +11,8 @@
     }
 
     &__col {
+        $col: &;
+        @include trans;
         position: relative;
         height: 14.29vh;
         display: flex;
@@ -38,7 +40,24 @@
         }
 
         &:hover {
-            
+            #{$col}__icon {
+                img {
+                    right: 20%;
+                }
+
+                &--icon-position {
+                    img {
+                        right: 42%;
+                    }
+                }
+            }
+
+
+            @include mq(sm) {
+                &:not(:first-child) {
+                    width: 40%;
+                }
+            }
         }
 
         &:nth-child(1) {
@@ -133,6 +152,7 @@
 
         &__icon {
             img {
+                @include trans;
                 position: absolute;
                 right: 5%;
                 top: 10%;
