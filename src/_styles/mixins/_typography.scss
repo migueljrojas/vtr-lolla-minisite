@@ -1,3 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
-
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: 'Arista';
+    src: url('../fonts/Arista20Light.eot');
+    src: url('../fonts/Arista20Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Arista20Light.woff2') format('woff2'),
+        url('../fonts/Arista20Light.woff') format('woff'),
+        url('../fonts/Arista20Light.ttf') format('truetype'),
+        url('../fonts/Arista20Light.svg#Arista2.0Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista';
+    src: url('../fonts/Arista20Fat.eot');
+    src: url('../fonts/Arista20Fat.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Arista20Fat.woff2') format('woff2'),
+        url('../fonts/Arista20Fat.woff') format('woff'),
+        url('../fonts/Arista20Fat.ttf') format('truetype'),
+        url('../fonts/Arista20Fat.svg#Arista2.0Fat') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista';
+    src: url('../fonts/Arista20.eot');
+    src: url('../fonts/Arista20.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Arista20.woff2') format('woff2'),
+        url('../fonts/Arista20.woff') format('woff'),
+        url('../fonts/Arista20.ttf') format('truetype'),
+        url('../fonts/Arista20.svg#Arista2.0') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

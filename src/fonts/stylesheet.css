@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Arista 2.0';
+    src: url('Arista20Light.eot');
+    src: url('Arista20Light.eot?#iefix') format('embedded-opentype'),
+        url('Arista20Light.woff2') format('woff2'),
+        url('Arista20Light.woff') format('woff'),
+        url('Arista20Light.ttf') format('truetype'),
+        url('Arista20Light.svg#Arista2.0Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0 Fat';
+    src: url('Arista20Fat.eot');
+    src: url('Arista20Fat.eot?#iefix') format('embedded-opentype'),
+        url('Arista20Fat.woff2') format('woff2'),
+        url('Arista20Fat.woff') format('woff'),
+        url('Arista20Fat.ttf') format('truetype'),
+        url('Arista20Fat.svg#Arista2.0Fat') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0';
+    src: url('Arista20.eot');
+    src: url('Arista20.eot?#iefix') format('embedded-opentype'),
+        url('Arista20.woff2') format('woff2'),
+        url('Arista20.woff') format('woff'),
+        url('Arista20.ttf') format('truetype'),
+        url('Arista20.svg#Arista2.0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
