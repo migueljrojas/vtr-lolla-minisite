@@ -6,11 +6,10 @@
 global.$ = global.jQuery = require('jquery');
 global._ = require('underscore');
 var Header = require('../_modules/header/header');
-var Particles = require('./particles');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
+    require('../../node_modules/particles.js/particles');
 
     new Header();
-    // new Particles();
 });

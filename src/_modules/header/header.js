@@ -47,6 +47,13 @@ var Header = function() {
             selectColInformation.addClass('line-up__table__col--active');
         }
     })
+    particlesJS.load('app1', 'images/particles.json');
+    particlesJS.load('app2', 'images/particles.json');
+    particlesJS.load('app3', 'images/particles.json');
+    particlesJS.load('app4', 'images/particles.json');
+    particlesJS.load('app5', 'images/particles.json');
+    particlesJS.load('app6', 'images/particles.json');
+    particlesJS.load('app7', 'images/particles.json');
 };
 
 module.exports = Header;
