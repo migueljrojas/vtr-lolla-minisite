@@ -15,7 +15,7 @@ block content
                     strong KENDRICK LAMAR • ARCTIC MONKEYS • TWENTY ONE PILOTS • LENNY KRAVITZ • POST MALONE 
                     br
                     strong SAM SMITH • TIËSTO
-                    |  THE 1975 • INTERPOL • DIMITRI VEGAS & LIKE MIKE • STEVE AOKI • MACKLEMORE 
+                    |  THE <span class="-number">1975</span> • INTERPOL • DIMITRI VEGAS & LIKE MIKE • STEVE AOKI • MACKLEMORE 
                     br
                     | JUANES • ODESZA • GRETA VAN FLEET • YEARS & YEARS • VICENTICo • ZIGGY MARLEY • Rosalía • FOALS • ST. VINCENT
                     br
@@ -59,153 +59,176 @@ block content
                 .line-up__title preventa
                 .line-up__table
                     .line-up__heading
-                        .line-up__day.line-up__day--active viernes
-                        .line-up__day sabado
-                        .line-up__day domingo
-                    .line-up__table__col.line-up__table__col--active
+                        .line-up__day.line-up__day--active(data-target="0") viernes
+                        .line-up__day(data-target="1") sabado
+                        .line-up__day(data-target="2") domingo
+                    .line-up__table__col.line-up__table__col--active(data-tab="0")
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title general
                                 .line-up__cell-subtitle pre-sale
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 250
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-text
+                                    | vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 250
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge
-                                .line-up__cell-subtitle pre-sale 1
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 30
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-subtitle
+                                    | pre-sale <span class="-number">1</span>
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 30
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge premium
                                 .line-up__cell-subtitle pre-sale premium
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 20
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
-                    .line-up__table__col
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 20
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
+
+                    .line-up__table__col(data-tab="1")
                         .line-up__row
                             .line-up__cell
-                                .line-up__cell-title Hola
+                                .line-up__cell-title General Sábado
                                 .line-up__cell-subtitle pre-sale
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 250
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 250
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge
-                                .line-up__cell-subtitle pre-sale 1
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 30
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-subtitle
+                                    | pre-sale <span class="-number">1</span>
+                                .line-up__cell-text
+                                    | vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 30
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge premium
                                 .line-up__cell-subtitle pre-sale premium
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 20
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
-                    .line-up__table__col
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 20
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
+
+                    .line-up__table__col(data-tab="2")
                         .line-up__row
                             .line-up__cell
-                                .line-up__cell-title Chao
+                                .line-up__cell-title General Domingo
                                 .line-up__cell-subtitle pre-sale
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 250
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 250
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge
-                                .line-up__cell-subtitle pre-sale 1
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 30
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-subtitle
+                                    | pre-sale <span class="-number">1</span>
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 30
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar
                         .line-up__row
                             .line-up__cell
                                 .line-up__cell-title lolla lounge premium
                                 .line-up__cell-subtitle pre-sale premium
-                                .line-up__cell-text vtr 20% de descuento
-                            .line-up__cell
-                                .line-up__cell-comment stock
-                                .line-up__cell-number 20
-                            .line-up__cell
-                                .line-up__cell-comment precio normal
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                .line-up__cell-comment precio con vtr
-                                .line-up__cell-number $2500
-                            .line-up__cell
-                                a.line-up__cell-buy(href="") comprar
+                                .line-up__cell-text
+                                    |vtr <span class="-number">20%</span> de descuento
+                            .line-up__cell-wrapper
+                                .line-up__cell
+                                    .line-up__cell-comment stock
+                                    .line-up__cell-number 20
+                                .line-up__cell
+                                    .line-up__cell-comment precio normal
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    .line-up__cell-comment precio con vtr
+                                    .line-up__cell-number $2500
+                                .line-up__cell
+                                    a.line-up__cell-buy(href="https://www.puntoticket.com/Lollapalooza", target="_blank") comprar

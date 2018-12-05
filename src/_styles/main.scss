@@ -14,13 +14,22 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+// html {
+//     background: #000;
+// }
 
 body {
+    @include trans;
     font-family: $mainFont;
     font-weight: 300;
     overflow-x: hidden;
     width: 100vw;
     font-size: $sm;
+    opacity: 1;
+
+    &.-fade {
+        opacity: 0;
+    }
 }
 
 a {

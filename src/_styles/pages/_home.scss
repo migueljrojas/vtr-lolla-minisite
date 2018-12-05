@@ -65,24 +65,13 @@
             }
 
             #{$col}__text {
-                display: block;
-                position: absolute;
-                left: 50%;
-                top: 50%;
+                opacity: 1;
                 transform: translate3d(-50%, -50%, 0);
-                color: $white;
-                font-size: 45px;
-                text-transform: uppercase;
-                width: auto;
-                overflow: auto;
-
-                &--position {
-                    left: 35%;
-                }
             }
 
             @include mq(sm) {
                 width: 40%;
+                flex-basis: 40%;
             }
         }
 
@@ -212,9 +201,33 @@
         &__text {
             @include trans;
 
-            width: 0;
-            overflow: hidden;
+            display: block;
+            position: absolute;
+            left: 60%;
+            top: 30%;
+            transform: translate3d(0%, -50%, 0);
             color: $white;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $white;
+            opacity: 0;
+
+            @include mq(md) {
+                font-size: 45px;
+            }
+
+            &--position {
+                left: 35%;
+            }
+        }
+
+        &.-animate {
+            flex-grow: 5;
+            height: 100vh;
+            
+            @include mq(md) {
+                width: 100vw;
+            }
         }
     }
 }
