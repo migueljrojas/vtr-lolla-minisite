@@ -2,6 +2,12 @@
     overflow: hidden;
     position: relative;
 
+    & + .footer {
+        @include mq(sm) {
+            display: none;
+        }
+    }
+
     &__wrapper {
         @include mq(sm) {
             display: flex;
@@ -183,8 +189,4 @@
             }
         }
     }
-}
-
-.footer {
-    display: none;
 }

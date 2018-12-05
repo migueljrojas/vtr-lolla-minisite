@@ -17,16 +17,17 @@ var Header = function() {
         body.removeClass('-hideOverflow');
     });
 
+// Hover in home page
     var columns = $('.home__col');
 
     columns.on('click', function(e) {
         e.preventDefault();
-
+        var link = $(this).attr('href');
+        
         setTimeout(function(){
-            window.location.href = '/catalogo';
-        }, 3000);
+            window.location.href = link;
+        }, 1000);
     })
-
 };
 
 module.exports = Header;

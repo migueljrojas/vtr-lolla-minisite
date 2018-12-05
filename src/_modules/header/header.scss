@@ -1,12 +1,18 @@
 .header {
     $h: &;
-    position: absolute;
+
     width: 100%;
     height: 10vh;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background: $black;
+
+    @include mq(sm) {
+        position: absolute;
+        background: none;
+    }
 
     &__logo {
         &--vtr {
@@ -18,7 +24,7 @@
                 right: 0;
                 height: auto;
                 padding-bottom: 0;
-                transform: translateY(-30%);
+                transform: translateY(-33.5%);
                 width: 15%;
 
                 @include mq(sm) {
@@ -29,16 +35,17 @@
 
         &--loolla {
             img {
-                position: absolute;
-                top: 30%;
-                bottom: 0;
                 right: 0;
                 width: 30%;
                 height: auto;
                 padding-bottom: 0;
+                position: absolute;
                 left: 18%;
+                top: 3%;
 
                 @include mq(sm) {
+                    bottom: 0;
+                    top: 30%;
                     left: 7%;
                     top: 25%;
                     width: 20%;
@@ -52,8 +59,8 @@
         flex-direction: column-reverse;
 
         @include mq(sm) {
-            flex-direction: row;
             align-items: center;
+            flex-direction: row;
         }
     }
 
@@ -64,6 +71,11 @@
         margin: 0;
         text-decoration: none;
         cursor: pointer;
+        color: $white;
+
+        @include mq(sm) {
+            color: $black;
+        }
     }
 
     &__social {
@@ -77,6 +89,11 @@
 
         i {
             cursor: pointer;
+            color: $white;
+
+            @include mq(sm) {
+                color: $black;
+            }
         }
     }
 
