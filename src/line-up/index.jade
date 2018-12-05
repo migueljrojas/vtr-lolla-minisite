@@ -1,0 +1,211 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.line-up
+        .line-up__container
+            .line-up__col
+                .line-up__logo-main
+                    img(src="../images/lineup/lineup-logo.png")
+                .line-up__subtitle ellos serán los encargados de hacerte saltar y bailar este año en lollapalooza chile
+                p.line-up__text
+                    strong KENDRICK LAMAR • ARCTIC MONKEYS • TWENTY ONE PILOTS • LENNY KRAVITZ • POST MALONE 
+                    br
+                    strong SAM SMITH • TIËSTO
+                    |  THE 1975 • INTERPOL • DIMITRI VEGAS & LIKE MIKE • STEVE AOKI • MACKLEMORE 
+                    br
+                    | JUANES • ODESZA • GRETA VAN FLEET • YEARS & YEARS • VICENTICo • ZIGGY MARLEY • Rosalía • FOALS • ST. VINCENT
+                    br
+                    | ZHU • DON DIABLO  •  SNOW PATROL • Caetano, Moreno, Zeca  &  Tom Veloso • BRING ME THE HORIZON KSHMR
+                    br
+                    | PORTUGAL. THE MAN • RÜFÜS DU SOL • JORJA SMITH • FISHER  •  GEPE • CLAIRO • KUNGS • RL GRIME
+                    br
+                    | PROTOJE & THE INDIGGNATION • TROYE SIVAN  •  ANA TIJOUX • LOUD LUXURY • GTA • GRYFFIN • GREEN VALLEY
+                    br
+                    | AMÉRICO  • NICOLA CRUZ •  MONSIEUR PERINÉ • THE FEVER 333 • BOOKA SHADE • VALENTINO KHAN  •  JAIN 
+                    br
+                    | FRANCISCA VALENZUELA • JOE VASCONCELLOS • DJ WHO • PARCELS • LANY  • KAMASI WASHINGTON
+                    br
+                    | TOKyO SKA PARADISE ORCHESTRA • HIPPIE SABOTAGe  • ASES FALSOS • A.Chal • MC KEVINHO
+                    br
+                    | SATORI • CHANCHA VÍA CIRCUITO • DJ RAFF  •  PILLANES • LA VELA PUERCA • KHEA • LA FLORIPONDIO
+                    br
+                    | SEUN KUTI • KIDD KEO • RUBIO • THE INSPECTOR CLUZO • JET LAG • ZATURNO • C. Tangana • Fiskales Ad-Hok 
+                    br
+                    | ALEMÁN • FRANK´S WHITE CANVAS • ROOTZ HI-FI • BAD GYAL • CARAMELOS DE CIANURO • DREFQUILA
+                    br
+                    | BRONKO YOTTE • PLAYA GÓTICA • NEWEN AFROBEAT • ADELAIDA • SITA ABELLÁN  •  FERNANDA ARRAU
+                    br
+                    | MELANIE RIBBE • ELKIN ROBINSON • ALIKA • TOMASA DEL REAL   • NATALIA CONTESSE • OMAR VARELA 
+                    br
+                    | CIGARBOX MAN • iLE • AMANITAS • KALEEMA • HUMBOLDT • GIANLUCA • FANTASNA • JULIO VICTORIA • KEKO YOMA
+                    br
+                    | SISTEK • COMPADRE • ENTRÓPICA • RED RABBIT • DJ TRESSOR • DRUNVALOOP • 
+                    br
+                    | ISA ROJAS •  POL DEL SUR • POLIMÁ WESTCOAST • FLAK • GOLDENRAT • JEFE INDIO
+
+                .line-up__logo-kids
+                    img(src="../images/kidsloolla.png")
+                p.line-up__text
+                    strong LOS PULENTOS • SINERGIA KIDS GAME • 
+                    | Ángel Parra y los Retornados • Sophi Lira
+                    br
+                    |SUBHIRA • LOS FRUTANTES • FUNDACIÓN ORQUESTAS JUVENILES E INFANTILES • DANZANTE
+
+            .line-up__main
+                .line-up__title preventa
+                .line-up__table
+                    .line-up__heading
+                        .line-up__day.line-up__day--active viernes
+                        .line-up__day sabado
+                        .line-up__day domingo
+                    .line-up__table__col.line-up__table__col--active
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title general
+                                .line-up__cell-subtitle pre-sale
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 250
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge
+                                .line-up__cell-subtitle pre-sale 1
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 30
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge premium
+                                .line-up__cell-subtitle pre-sale premium
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 20
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                    .line-up__table__col
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title Hola
+                                .line-up__cell-subtitle pre-sale
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 250
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge
+                                .line-up__cell-subtitle pre-sale 1
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 30
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge premium
+                                .line-up__cell-subtitle pre-sale premium
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 20
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                    .line-up__table__col
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title Chao
+                                .line-up__cell-subtitle pre-sale
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 250
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge
+                                .line-up__cell-subtitle pre-sale 1
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 30
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar
+                        .line-up__row
+                            .line-up__cell
+                                .line-up__cell-title lolla lounge premium
+                                .line-up__cell-subtitle pre-sale premium
+                                .line-up__cell-text vtr 20% de descuento
+                            .line-up__cell
+                                .line-up__cell-comment stock
+                                .line-up__cell-number 20
+                            .line-up__cell
+                                .line-up__cell-comment precio normal
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                .line-up__cell-comment precio con vtr
+                                .line-up__cell-number $2500
+                            .line-up__cell
+                                a.line-up__cell-buy(href="") comprar

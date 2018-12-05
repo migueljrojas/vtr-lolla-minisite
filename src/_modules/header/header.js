@@ -23,10 +23,29 @@ var Header = function() {
     columns.on('click', function(e) {
         e.preventDefault();
         var link = $(this).attr('href');
-        
+
         setTimeout(function(){
             window.location.href = link;
         }, 1000);
+    })
+
+//  Line-up page table fuctionality
+
+    var day = $('.line-up__day');
+    var dayInformation = $('.line-up__table__col');
+
+    day.on('click', function(event) {
+        var dayIndex = $(this).index();
+        var selectColInformation = $(event.target).parent().parent().children().eq(dayIndex + 1);
+
+        if($(this).hasClass('line-up__day--active')) {
+            return;
+        } else {
+            day.removeClass('line-up__day--active');
+            dayInformation.removeClass('line-up__table__col--active');
+            $(this).addClass('line-up__day--active');
+            selectColInformation.addClass('line-up__table__col--active');
+        }
     })
 };
 
