@@ -47,6 +47,11 @@
         }
 
         &:hover {
+
+            .particles-js-canvas-el {
+                opacity: 1;
+            }
+
             #{$col}__icon {
                 img {
                     right: 20%;
@@ -61,9 +66,7 @@
 
 
             @include mq(sm) {
-                &:not(:first-child) {
-                    width: 40%;
-                }
+                width: 40%;
             }
         }
 
@@ -189,4 +192,10 @@
             }
         }
     }
+}
+
+.particles-js-canvas-el {
+    @include trans($d: .7s);
+    opacity: 0;
+    mix-blend-mode: overlay;
 }
