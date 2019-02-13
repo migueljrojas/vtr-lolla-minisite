@@ -84,16 +84,6 @@ var Header = function() {
             return $(this).data('tab') === dayIndex;
         }).addClass('line-up__table__col--active');        
     });
-
-    if ($('.home').length > 0) {
-        particlesJS.load('app1', 'scripts/particles.json');
-        particlesJS.load('app2', 'scripts/particles.json');
-        particlesJS.load('app3', 'scripts/particles.json');
-        particlesJS.load('app4', 'scripts/particles.json');
-        particlesJS.load('app5', 'scripts/particles.json');
-        particlesJS.load('app6', 'scripts/particles.json');
-        particlesJS.load('app7', 'scripts/particles.json');
-    }
 };
 
 module.exports = Header;

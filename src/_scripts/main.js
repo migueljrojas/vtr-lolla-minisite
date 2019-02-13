@@ -9,7 +9,6 @@ var Header = require('../_modules/header/header');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
-    require('../../node_modules/particles.js/particles');
 
     new Header();
 });
