@@ -1,0 +1,91 @@
+.trivia-lollacl,
+.vtr-playstage,
+.azotea-vtr,
+.vtr-shuffle {
+    &--shuffle-background {
+        background: $fucsia url("/images/back-internas.png") top center / contain;
+    }
+
+    &--trivia-background {
+        background: $magenta url("/images/back-internas.png") top center / contain;
+    }
+
+    &--playstage-background {
+        background: $blue url("/images/back-internas.png") top center / contain;
+    }
+
+    &--azotea-background {
+        background: $cyan url("/images/back-internas.png") top center / contain;
+    }
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 85vh;
+
+    @include mq(sm) {
+        min-height: 100vh;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15vh;
+        text-align: center;
+        width: 90%;
+        padding-top: 80px;
+
+        @include mq(sm) {
+            padding-top: 20vh;
+            width: 70%;
+        }
+    }
+
+    &__title {
+        width: 100%;
+
+        @include mq(sm) {
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+    }
+
+    &__subtitle {
+        color: $white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+        span {
+            font-family: $altFont;
+            font-weight: 700;
+        }
+    }
+
+    &__text {
+        color: $white;
+
+        span {
+            font-family: $altFont;
+            font-weight: 700;
+        }
+    }
+
+    &__image {
+        width: 80%;
+
+        @include mq(sm) {
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+}

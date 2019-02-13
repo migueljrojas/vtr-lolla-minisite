@@ -1,0 +1,44 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.series
+        .series__container
+            .series__title
+                img(src="/images/series/title.png")
+            .series__subtitle
+                |ellos seran los encargados de hacerte saltar y bailar este año en lollapalooza chile 
+                span 2019
+        .series__wrapper.series__wrapper--right-align
+            .series__video
+                a(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcXS4HBgl50pCQRs9uWnfU9O" target="_blank")
+                    img(src="/images/series/video1.jpg")
+            .series__group
+                .series__group-title
+                    img(src="/images/series/video1-title.png")
+                p.series__text conoce lollapalooza chile desde adentro con los insiders que hacen este festival posible
+                a.series__button(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcXS4HBgl50pCQRs9uWnfU9O" target="_blank")
+                    span
+        .series__wrapper.series__wrapper--left-align
+            .series__video
+                a(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcXrQaG1Esg1deWfbTsrOtzb" target="_blank")
+                    img(src="/images/series/video2.jpg")
+            .series__group
+                .series__group-title
+                    img(src="/images/series/video2-title.png")
+                p.series__text ¿Renunciarías a tu carrera para convertirte en músico? mira cómo le resultó a roberto
+                a.series__button(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcXrQaG1Esg1deWfbTsrOtzb" target="_blank")
+                    span
+        .series__wrapper.series__wrapper--right-align
+            .series__video
+                a(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcV35vsgdU_pI_R5_XDHh1EM" target="_blank")
+                    img(src="/images/series/video3.jpg")
+            .series__group
+                .series__group-title
+                    img(src="/images/series/video3-title.png")
+                p.series__text hay quienes llevan a sus bandas favoritas en la sangre, y lo hacen todo por ellas. descubre si tu también eres un real fan vtr
+                a.series__button(href="https://www.youtube.com/playlist?list=PL83y3QEBLvcV35vsgdU_pI_R5_XDHh1EM" target="_blank")
+                    span

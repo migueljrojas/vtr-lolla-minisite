@@ -1,0 +1,15 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.azotea-vtr.azotea-vtr--azotea-background
+        .azotea-vtr__wrapper
+            .azotea-vtr__title
+                img(src="/images/azotea-vtr/title.png")
+            h3.azotea-vtr__subtitle Mira a tu artista favorito con la vista que mereces
+            p.azotea-vtr__text Este año podrás participar para ver a tu artista favorito en el VTR Stage desde la azotea VTR.
+        .azotea-vtr__image
+            img(src="/images/proximamente.png")

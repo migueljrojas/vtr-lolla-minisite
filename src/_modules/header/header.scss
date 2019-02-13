@@ -64,9 +64,20 @@
         }
     }
 
+    &__inicio {
+        display: none;
+
+        @include mq(sm) {
+            display: flex;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+    }
+
     &__legal {
         font-weight: 500;
-        text-transform: uppercase;
+        text-transform: capitalize;
         letter-spacing: 1px;
         margin: 0;
         text-decoration: none;
@@ -75,6 +86,7 @@
 
         @include mq(sm) {
             color: $black;
+            margin-left: 20px;
         }
     }
 

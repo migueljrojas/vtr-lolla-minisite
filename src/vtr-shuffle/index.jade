@@ -1,0 +1,18 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.vtr-shuffle.vtr-shuffle--shuffle-background
+        .vtr-shuffle__wrapper
+            .vtr-shuffle__title
+                img(src="/images/vtr-shuffle/title.png")
+            h3.vtr-shuffle__subtitle 
+                |Sube el volumen para conocer Lolla desde 
+                span 6 
+                |ritmos distintos
+            p.vtr-shuffle__text Rock, indie, pop, folk electrónica y hip hop viven Lollapalooza a su manera. Conoce qué es eso tan especial que hace a los fanáticos sentirse tan atraídos a cada uno de estos géneros.
+        .vtr-shuffle__image
+            img(src="/images/proximamente.png")

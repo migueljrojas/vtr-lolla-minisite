@@ -18,7 +18,9 @@
 
     &__col {
         $col: &;
+
         @include trans;
+
         position: relative;
         height: 14.29vh;
         display: flex;
@@ -48,7 +50,12 @@
 
         &:hover {
 
-            .particles-js-canvas-el {
+            @include mq(sm) {
+                width: 30%;
+                flex-basis: 30%;
+            }
+
+            #{$col}__layer {
                 opacity: 1;
             }
 
@@ -67,11 +74,6 @@
             #{$col}__text {
                 opacity: 1;
                 transform: translate3d(-50%, -50%, 0);
-            }
-
-            @include mq(sm) {
-                width: 40%;
-                flex-basis: 40%;
             }
         }
 
@@ -122,7 +124,7 @@
             left: 0;
             background: url('../images/home/wave-back.png') no-repeat center;
             mix-blend-mode: overlay;
-            opacity: .5;
+            opacity: 0;
 
             @include mq(sm) {
                 background-size: 300%;
@@ -224,7 +226,7 @@
         &.-animate {
             flex-grow: 5;
             height: 100vh;
-            
+
             @include mq(md) {
                 width: 100vw;
             }
