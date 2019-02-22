@@ -1,0 +1,293 @@
+.vtr-shuffle {
+
+    $vtr-color: lighten($fucsia, 15%);
+
+    position: relative;
+
+    &__slides {
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    &__slide {
+        @include trans;
+
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        pointer-events: none;
+
+        &.-active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        &__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                min-height: 100%;
+            }
+        }
+
+        &__data {
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            padding-bottom: 3%;
+            color: $white;
+            max-width: 700px;
+        }
+
+        &__title {
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 0 15px;
+
+            ._number {
+                font-weight: 600;
+            }
+        }
+
+        &__logo {
+            display: block;
+            margin: 0 0 20px;
+            font-size: 110px;
+            color: $white;
+            line-height: 1;
+        }
+
+        &__text {
+            margin: 0 0 25px;
+
+            @include mq(md) {
+                font-size: 20px;
+                letter-spacing: 0.7px;
+            }
+        }
+
+        &__play {
+            @include trans;
+
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid transparentize($white, .35);
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid $white;
+                color: $white;
+            }
+        }
+    }
+
+    &__index {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        text-align: right;
+        display: flex;
+
+        @include mq(sm) {
+            right: 40px;
+        }
+    }
+
+    &__index-genre-list {
+        color: $white;
+        border-right: 2px solid $vtr-color;
+    }
+    
+    &__index-genre {
+        @include trans;
+        
+        padding-right: 25px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        position: relative;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 1;
+        
+        &:not(:last-child) {            
+            margin-bottom: 7px;
+        }
+
+        span {
+            opacity: .5;
+        }
+
+        &:before {
+            @include trans;
+
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 14px;
+            top: 1px;
+            right: 7px;
+            border-radius: 4px;
+            background: $vtr-color;
+        }
+
+        &.-active {
+            padding-right: 50px;
+
+            span {
+                @include trans;
+
+                opacity: 1;
+            }
+
+            &:before {
+                width: 35px;
+            }
+        }
+    }
+
+    &__index-controls {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        ._prev,
+        ._next {
+            @include trans;
+
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid transparentize($white, .35);
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid $white;
+            }
+        }
+
+        ._index {
+            padding: 15px 0;
+            color: $white;
+            font-family: $altFont;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+
+    &__modal {
+        $m: &;
+
+        @include trans;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right:0;
+        z-index: 10000;
+        opacity: 0;
+        visibility: visible;
+        pointer-events: none;
+        color: $white;
+        text-align: center;
+
+        a {
+            color: $white;
+
+            i {
+                color: $white;
+            }
+        }
+
+        &__backdrop {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right:0;
+            background: rgba(0,0,0,.75);
+        }
+
+        &__container {
+            @include trans;
+
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left:0;
+            right:0;
+            margin: auto;
+            width: 90%;
+            max-width: 850px;
+            transform: translateY(-100%);
+        }
+
+        &__close {
+            @include close;
+
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+        }
+
+        &__video {
+            width:100%;
+            height: 0;
+            padding-bottom: 56.5%;
+            position: relative;
+            overflow: hidden;
+            background: $black;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom:0;
+                width:100%;
+                height: 100%;
+                border:none;
+            }
+        }
+
+        &.-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+
+            #{$m}__container {
+                opacity: 1;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
