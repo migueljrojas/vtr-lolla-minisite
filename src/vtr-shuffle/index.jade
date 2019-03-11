@@ -7,85 +7,92 @@ block config
 block content
     main.vtr-shuffle
         .vtr-shuffle__slides
-            .vtr-shuffle__slide.vtr-shuffle__slide--inicio.-active
+            .vtr-shuffle__slide.vtr-shuffle__slide--inicio(data-content="inicio")
                 .vtr-shuffle__slide__background
+                    img(src="/images/vtr-shuffle/back-inicio-mobile.jpg")
                     img(src="/images/vtr-shuffle/back-inicio.jpg")
                 .vtr-shuffle__slide__data
                     img.vtr-shuffle__slide__logo(src="/images/vtr-shuffle/vtr-shuffle-logo.png")
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
+                    //- a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="4XdF_W8l3CA")
+                    //-     i.material-icons play_arrow
+                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <span class="_number">6</span> ritmos distintos
                     p.vtr-shuffle__slide__text Rock, indie, pop, folk electrónica y hip hop viven Lollapalooza a su manera. Conoce qué es eso tan especial que hace a los fanáticos sentirse tan atraídos a cada uno de estos géneros.
-                    a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="4XdF_W8l3CA")
-                        i.material-icons keyboard_arrow_right
 
-            .vtr-shuffle__slide.vtr-shuffle__slide--electronica
+            .vtr-shuffle__slide.vtr-shuffle__slide--electronica(data-content="electronica")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-electronica.png")
+                    img(src="/images/vtr-shuffle/back-electronica-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-electronica.jpg")
                 .vtr-shuffle__slide__data
+                    a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="yceEpszmm7M")
+                        i.material-icons play_arrow
                     h2.vtr-shuffle__slide__logo Electrónica
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
-                    a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="hgHogMhzst0")
-                        i.material-icons keyboard_arrow_right
+                    h3.vtr-shuffle__slide__title Beats, golpes y bailar sin parar toda la noche. Ese es el mood en el que nos pone la música electrónica.
             
-            .vtr-shuffle__slide.vtr-shuffle__slide--hip-hop
+            .vtr-shuffle__slide.vtr-shuffle__slide--hip-hop(data-content="hip-hop")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-hip-hop.png")
+                    img(src="/images/vtr-shuffle/back-hip-hop-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-hip-hop.jpg")
                 .vtr-shuffle__slide__data
-                    h2.vtr-shuffle__slide__logo Hip Hop
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
                     a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="CesgANnFQ1Y")
-                        i.material-icons keyboard_arrow_right
+                        i.material-icons play_arrow
+                    h2.vtr-shuffle__slide__logo Hip Hop
+                    h3.vtr-shuffle__slide__title El hip hop se caracteriza por pantalones anchos, poleras XL, ritmos urbanos, breakdance, graffitis y street style.
             
-            .vtr-shuffle__slide.vtr-shuffle__slide--folk
+            .vtr-shuffle__slide.vtr-shuffle__slide--folk(data-content="folk")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-folk.png")
+                    img(src="/images/vtr-shuffle/back-folk-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-folk.jpg")
                 .vtr-shuffle__slide__data
-                    h2.vtr-shuffle__slide__logo Folk
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
                     a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="f5_vGDqO54U")
-                        i.material-icons keyboard_arrow_right
+                        i.material-icons play_arrow
+                    h2.vtr-shuffle__slide__logo Folk
+                    h3.vtr-shuffle__slide__title Guitarras acústicas, letras desgarradoras, profundas y melancólicas son lo que componen a este estilo de música folclórica moderna.
 
-            .vtr-shuffle__slide.vtr-shuffle__slide--indie
+            .vtr-shuffle__slide.vtr-shuffle__slide--indie(data-content="indie")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-indie.png")
+                    img(src="/images/vtr-shuffle/back-indie-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-indie.jpg")
                 .vtr-shuffle__slide__data
-                    h2.vtr-shuffle__slide__logo Indie
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
                     a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="GYOWmy3hkt4")
-                        i.material-icons keyboard_arrow_right
+                        i.material-icons play_arrow
+                    h2.vtr-shuffle__slide__logo Indie
+                    h3.vtr-shuffle__slide__title Un estilo independiente y propuestas alternativas que nos cuentan historias con un tono agridulce e innovador.
 
-            .vtr-shuffle__slide.vtr-shuffle__slide--pop
+            .vtr-shuffle__slide.vtr-shuffle__slide--pop(data-content="pop")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-pop.png")
+                    img(src="/images/vtr-shuffle/back-pop-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-pop.jpg")
                 .vtr-shuffle__slide__data
-                    h2.vtr-shuffle__slide__logo Pop
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
                     a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="-OzzmWEk5sE")
-                        i.material-icons keyboard_arrow_right
+                        i.material-icons play_arrow
+                    h2.vtr-shuffle__slide__logo Pop
+                    h3.vtr-shuffle__slide__title El pop es un concepto transversal, en él encontramos sonidos armónicos, alegría y ritmo para hacer mejor nuestro día.  
 
-            .vtr-shuffle__slide.vtr-shuffle__slide--rock
+            .vtr-shuffle__slide.vtr-shuffle__slide--rock(data-content="rock")
                 .vtr-shuffle__slide__background
-                    img(src="/images/vtr-shuffle/back-rock.png")
+                    img(src="/images/vtr-shuffle/back-rock-mobile.jpg")
+                    img(src="/images/vtr-shuffle/back-rock.jpg")
                 .vtr-shuffle__slide__data
+                    a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="ZM057vhY6IQ")
+                        i.material-icons play_arrow
                     h2.vtr-shuffle__slide__logo Rock
-                    h3.vtr-shuffle__slide__title Sube el volumen para conocer Lolla desde <br><span class="_number">6</span> ritmos distintos
-                    a.vtr-shuffle__slide__play(href="#", data-modal="open", data-video="nfoLr2bdvJ8")
-                        i.material-icons keyboard_arrow_right
+                    h3.vtr-shuffle__slide__title El rock es rudeza, nos permite sacar a ese animal que todos llevamos dentro, es una herramienta para expresarnos, es energía e incluso es glamour.
 
         .vtr-shuffle__index
             ul.vtr-shuffle__index-genre-list
-                li.vtr-shuffle__index-genre.-active
+                li.vtr-shuffle__index-genre(data-target="inicio")
                     span Inicio
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="electronica")
                     span Electronica
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="hip-hop")
                     span Hip Hop
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="folk")
                     span Folk
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="indie")
                     span Indie
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="pop")
                     span Pop
-                li.vtr-shuffle__index-genre
+                li.vtr-shuffle__index-genre(data-target="rock")
                     span Rock
             .vtr-shuffle__index-controls
                 button._prev
@@ -95,6 +102,9 @@ block content
                     | / 7
                 button._next
                     i.material-icons keyboard_arrow_down
+
+        button._bottom-next
+            i.material-icons keyboard_arrow_down
 
     .vtr-shuffle__modal
         .vtr-shuffle__modal__backdrop(data-modal="close")
