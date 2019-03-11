@@ -2,7 +2,7 @@
 
 // Constructor
 var VtrTrivia = function() {
-    var context = $('.vtr-trivia');    
+    var context = $('.vtr-trivia');
 
     if (context.length > 0) {
         // var questions = $('.trivia-question');
@@ -37,6 +37,17 @@ var VtrTrivia = function() {
         // function submitAnswer() {
         //     validateQuestion();
         //     nextQuestion();
+        // }
+
+        // var resultsMapping = {
+        //     range039: {
+        //         text: 'Zaraza',
+        //         icon: '/img/blabla'
+        //     },
+        //     range4069: {
+        //         text: 'Zaraza',
+        //         icon: '/img/blabla'
+        //     }
         // }
     }
 };
