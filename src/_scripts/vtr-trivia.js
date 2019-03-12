@@ -35,7 +35,7 @@ var VtrTrivia = function() {
             var answerMessageWrong = currentQuestion.find('.trivia-lollacl__answer-message--wrong');
             var breadcrumIndicators = $('.trivia-lollacl__question-indicator');
             var currentBreadcrumIndicator = breadcrumIndicators[currentQuestionIndex];
-            var breadcrumLines = $('.trivia-lollacl__breadcrum-line');
+            var breadcrumLines = $('.trivia-lollacl__breadcrumb-line');
             var currentBreadcrumLine = breadcrumLines[currentQuestionIndex];
 
             console.log(currentBreadcrumIndicator);

@@ -370,7 +370,7 @@
         }
     }
 
-    &__breadcrum {
+    &__breadcrumb {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -378,14 +378,14 @@
         z-index: 2;
     }
 
-    &__breadcrum-col {
+    &__breadcrumb-col {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 50px;
     }
 
-    &__breadcrum-group {
+    &__breadcrumb-group {
         position: relative;
 
         &:not(:last-child) {
@@ -393,7 +393,7 @@
         }
     }
 
-    &__breadcrum-line {
+    &__breadcrumb-line {
         @include trans;
 
         position: absolute;
