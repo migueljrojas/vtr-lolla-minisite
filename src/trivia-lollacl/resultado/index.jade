@@ -5,9 +5,35 @@ block config
   - var baseUrl = '../../'
 
 block content
-    main.trivia-lollacl.trivia-lollacl--trivia-background
-        .trivia-lollacl__wrapper
-            .trivia-lollacl__title
-                img(src="/images/trivia/title.png")
-            h3.trivia-lollacl__subtitle
-                |Resultado
+    main.trivia-lollacl.trivia-lollacl--trivia-background.trivia-lollacl--resultado
+        .container
+            .row
+                .col-xs-24
+                    .trivia-lollacl__title
+                        img(src="/images/trivia/title.png")
+                .col-xs-24.col-sm-11.trivia-lollacl__col-right.trivia-lollacl__col-right--resultado
+                    .trivia-lollacl__group.trivia-lollacl__group--right
+                        h3.trivia-lollacl__subtitle.trivia-lollacl__subtitle--resultado
+                            span 10 
+                            |respuestas correctas
+                        h2.trivia-lollacl__resultado-text
+                            |¡eres un experto en lollacl 
+                            span 2019
+                            |!
+                        p.trivia-lollacl__resultado-share comparte tu resultado
+                        .trivia-lollacl__resultado-group
+                            a.trivia-lollacl__icon-facebook(target="_blank" href="#")
+                                img(src="/images/trivia/btn-facebook.png")
+                            a.trivia-lollacl__icon-twitter(href="#")
+                                img(src="/images/trivia/btn-twitter.png")
+                .col-xs-24.col-sm-12
+                    .trivia-lollacl__group.trivia-lollacl__group--image.trivia-lollacl__group--image--white
+                        img(src="/images/trivia/icon-result-1.png")
+                        .trivia-lollacl__answer-message.trivia-lollacl__answer-message--wrong
+                            .trivia-lollacl__answer-wrapper
+                                img(src="/images/trivia/icon-wrong.png")
+                            p.trivia-lollacl__message-text respuesta incorrecta
+                        .trivia-lollacl__answer-message.trivia-lollacl__answer-message--right
+                            .trivia-lollacl__answer-wrapper
+                                img(src="/images/trivia/icon-correct.png")
+                            p.trivia-lollacl__message-text respuesta correcta

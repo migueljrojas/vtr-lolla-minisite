@@ -1,0 +1,202 @@
+[
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"1",
+        "options": [
+                "birdmom",
+                "Paloma mami",
+                "babby  bird",
+                "paloma mom"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"2",
+        "options": [
+            "three people",
+            "three",
+            "los tres",
+            "tres hombres"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"3",
+        "options": [
+            "diablo",
+            "diablomen",
+            "diablado",
+            "don diablo"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"4",
+        "options": [
+            "rosa españa",
+            "rosa flamenco",
+            "rosalía",
+            "rosaura"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"5",
+        "options": [
+            "american sound",
+            "américo",
+            "américa",
+            "americana"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"6",
+        "options": [
+            "saturno",
+            "zaturnio",
+            "zaturno",
+            "planetario"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"7",
+        "options": [
+            "playa dark",
+            "caribe gótico",
+            "playa gótica",
+            "caribe darks"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"8",
+        "options": [
+            "portugal man",
+            "portugal, the man",
+            "flagmen",
+            "flag people"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"9",
+        "options": [
+            "patrulla invernal",
+            "invierno policía",
+            "snow cold",
+            "snow patrol"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"10",
+        "options": [
+            "dj who",
+            "music who",
+            "question dj",
+            "dj question"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"11",
+        "options": [
+            "fish",
+            "peces en el mar",
+            "fisher",
+            "fishing"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"12",
+        "options": [
+            "soldado feliz - la floripondio",
+            "buen soldado - francisca valenzuela",
+            "guerra felíz - rosalía",
+            "good solider - jorja smith"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"13",
+        "options": [
+            "fiesta sad - playa gótica",
+            "party sad - bronko yotte",
+            "siempre triste - gianluca",
+            "siempre tropical - gianluca"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"14",
+        "options": [
+            "tokyo trompet",
+            "trompeta japonesa",
+            "oriental orchesta",
+            "tokyo ska paradise orchesta"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"15",
+        "options": [
+            "tristeza automática - paloma mami",
+            "llorando en la limo - c. tangana",
+            "triste en la limo - c. tangana",
+            "sad en la limo - c. tangana"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"16",
+        "options": [
+            "ases falsos",
+            "catar falsas",
+            "false cards",
+            "los ases"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"17",
+        "options": [
+            "desayuno - vicentico",
+            "fruta y té - gepe",
+            "tomar desayunito - gepe",
+            "té piña y naranja - juanes"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"18",
+        "options": [
+            "hotel & casino - snow patrol",
+            "base hotel, casino & tranquility - arctic monkeys",
+            "tranquility base hotel & casino - arctic monkeys",
+            "monkeys tranquility & casino - interpol"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"19",
+        "options": [
+            "la vela puerca",
+            "vela puerca",
+            "the candle pigs",
+            "the flaming pigs"
+        ]
+    },
+    {
+        "image":"/images/trivia/icon-sample.png",
+        "number":"20",
+        "options": [
+            "veneno dulce",
+            "cianuro dulce",
+            "caramelos de veneno",
+            "caramelos de cianuro"
+        ]
+    }
+]
