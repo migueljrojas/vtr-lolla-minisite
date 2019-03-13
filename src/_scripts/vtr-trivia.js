@@ -81,11 +81,12 @@ var VtrTrivia = function() {
         };
 
         function updateSocialSharing() {
-            var facebookShareUrl = 'http://www.facebook.com/sharer.php?s=100&p[title]=VTR%20es%20Lollapalloza&p[summary]=¡Soy%20' + score + '%%20experto%20en%20Lolla!%20Conoce%20tu%20porcentaje%20con%20la%20Trivia%20#VTResLollaCL&p[url]=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
-            // var facebookShareUrl = "http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=" + correctAnswers;
-            var twitterShareUrl = 'https://twitter.com/intent/tweet?text=¡Soy%20' + score + '%%20experto%20en%20Lolla!%20Conoce%20tu%20porcentaje%20con%20la%20Trivia%20#VTResLollaCL&url=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
+            var customMessage = '¡Soy%20' + score + '%25%20experto%20en%20Lolla!%20Conoce%20tu%20porcentaje%20con%20la%20Trivia%20%23VTResLollaCL';
+            var facebookShareUrl = 'http://www.facebook.com/sharer.php?s=100&p[url]=https://vtreslollacl.cl/trivia-lollacl-2/resultado?respuestascorrectas=' + correctAnswers;
+            var twitterShareUrl = 'https://twitter.com/intent/tweet?text=' + customMessage + '&url=https://vtreslollacl.cl/trivia-lollacl-2/resultado?respuestascorrectas=' + correctAnswers;
 
             facebookShareButton.attr('href', facebookShareUrl);
+            facebookShareButton.attr('quote', customMessage);
             twitterShareButton.attr('href', twitterShareUrl);
         };
 
@@ -198,7 +199,7 @@ var VtrTrivia = function() {
 
                 currentQuestionIndex++;
             } else {
-                window.location.href = '/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
+                window.location.href = '/trivia-lollacl-2/resultado?respuestascorrectas=' + correctAnswers;
                 console.log('last question');
             }
         }
