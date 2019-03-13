@@ -5,7 +5,7 @@ block config
   - var baseUrl = '../../'
 
 block content
-    main.trivia-lollacl.trivia-lollacl--trivia-background
+    main.trivia-lollacl.trivia-lollacl--trivia-background#preguntas
         .container
             .row
                 .col-xs-24
@@ -26,7 +26,7 @@ block content
                                                         |#{index + 1}. 
                                                     |#{option}
                             .col-xs-24.col-sm-12
-                                .trivia-lollacl__group.trivia-lollacl__group--image.trivia-lollacl__group--image--white
+                                .trivia-lollacl__group.trivia-lollacl__group--image.trivia-lollacl__group--white
                                     img(src=item.image)
                                     .trivia-lollacl__answer-message.trivia-lollacl__answer-message--wrong
                                         .trivia-lollacl__answer-wrapper

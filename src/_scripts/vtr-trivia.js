@@ -2,21 +2,183 @@
 
 // Constructor
 var VtrTrivia = function() {
-    var context = $('.trivia-lollacl');
+    var preguntas = $('#preguntas');
+    var resultados = $('#resultados');
 
-    if (context.length > 0) {
+    if(resultados.length > 0) {
+        var facebookShareButton = $('.trivia-lollacl__icon-facebook');
+        var twitterShareButton = $('.trivia-lollacl__icon-twitter');
+        var resultImages = $('.trivia-lollacl__result-images');
+
+        var resultMessages = [
+            '¡Eres un experto en LollaCL <span>2019</span>!',
+            '¡CASI! Te falta solo un poquito de práctica.',
+            'Te falta conocer más estilos, ¡conócelos todos mirando <a href="/vtr-shuffle">VTR Shuffle aquí!</a>',
+            'Mmmm, no eres tan experto en festivales como creías. ¡Sigue intentando!',
+            'Quizás sea mejor que revises el <a href="/line-up">Lineup aquí</a>'
+        ];
+
+        var correctAnswers = parseInt(getUrlParamValue('respuestascorrectas'));
+        var score = correctAnswers * 5;
+
+        function getUrlParamValue(param) {
+            var results = new RegExp('[\?&]' + param + '=([^&#]*)').exec(window.location.href);
+
+            return results[1] || 0;
+        }
+
+        function processResults() {
+            if (score < 40) {
+                updateResultsData(4);
+
+                return;
+            }
+
+            if (score < 60) {
+                updateResultsData(3);
+
+                return;
+            }
+
+            if (score < 80) {
+                updateResultsData(2);
+
+                return;
+            }
+
+            if (score < 100) {
+                updateResultsData(1);
+
+                return;
+            }
+
+            if (score === 100) {
+                updateResultsData(0);
+
+                return;
+            }
+        }
+
+        function updateResultsData(index) {
+            var resultText = resultMessages[index];
+
+            updateResultText(resultText);
+            updateResultImage(index);
+            updateCorrectAnswers(correctAnswers);
+            updateSocialSharing();
+        };
+
+        function updateResultText(text) {
+            $('#resultado-text').html(text);
+        };
+
+        function updateResultImage(activeImage) {
+            $(resultImages[activeImage]).addClass('-active');
+        };
+
+        function updateCorrectAnswers(amount) {
+            $('#respuestas-correctas').html(amount + ' ');
+        };
+
+        function updateSocialSharing() {
+            var facebookShareUrl = 'http://www.facebook.com/sharer.php?s=100&p[title]=VTR%20es%20Lollapalloza&p[summary]=¡Soy%20' + score + '%%20experto%20en%20Lolla!%20Conoce%20tu%20porcentaje%20con%20la%20Trivia%20#VTResLollaCL&p[url]=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
+            // var facebookShareUrl = "http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=" + correctAnswers;
+            var twitterShareUrl = 'https://twitter.com/intent/tweet?text=¡Soy%20' + score + '%%20experto%20en%20Lolla!%20Conoce%20tu%20porcentaje%20con%20la%20Trivia%20#VTResLollaCL&url=https://vtreslollacl.cl/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
+
+            facebookShareButton.attr('href', facebookShareUrl);
+            twitterShareButton.attr('href', twitterShareUrl);
+        };
+
+        processResults();
+
+    }
+
+    if (preguntas.length > 0) {
         var questions = $('.trivia-lollacl__questions-wrapper');
         var answers = $('.trivia-lollacl__answer');
-        var facebookShareButton = $('.trivia-lollacl__icon-facebook');
-        var facebookShareUrl = "http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://vtreslollacl.cl/";
+        var correctAnswers = 0;
 
         var questionResults = [
             1,2,3,2,1,2,2,0,3,0,0,1,2,3,1,0,1,2,0,3
         ];
 
+        var answerState = {
+            value:'',
+            element: '',
+            question: '',
+            answers: '',
+            correctAnswer: ''
+        };
+
         var currentQuestionIndex = 0;
 
         questions.first().addClass('-active');
+
+        answers.on('click', processSelectedAnswer);
+
+        function processSelectedAnswer(e) {
+            var selectedAnswer = e.target;
+            var currentQuestion = $(selectedAnswer).parents('.trivia-lollacl__questions-wrapper');
+            var currentQuestionAnswers = currentQuestion.find('.trivia-lollacl__answer');
+            var isCorrectAnswer;
+
+            answerState.value = currentQuestionAnswers.index(selectedAnswer);
+            answerState.element = selectedAnswer;
+            answerState.question = currentQuestion;
+            answerState.answers = currentQuestionAnswers;
+            answerState.correctAnswer = questionResults[currentQuestionIndex];
+
+            isCorrectAnswer = validateSelectedAnswer();
+
+            $(selectedAnswer).addClass('-selected');
+
+            disableButtons(currentQuestionAnswers);
+
+            setTimeout(function() {
+                updateSelectedAnswerState(isCorrectAnswer);
+                displayAnswerMessage(isCorrectAnswer);
+                updateBreadcrumb();
+            }, 500);
+
+            setTimeout(nextQuestion, 2000);
+        };
+
+        function validateSelectedAnswer() {
+            var selectedAnswerValue = answerState.value;
+            var correctAnswerValue = answerState.correctAnswer;
+
+            if (selectedAnswerValue === correctAnswerValue) {
+                return true;
+            } else {
+                return false;
+            };
+        }
+
+        function updateSelectedAnswerState(isCorrectAnswer) {
+            var selectedAnswer = $(answerState.element);
+            var correctAnswerValue = answerState.correctAnswer;
+            var currentQuestionAnswers = answerState.answers;
+
+            if (isCorrectAnswer) {
+                correctAnswers++;
+                selectedAnswer.addClass('-right');
+            } else {
+                selectedAnswer.addClass('-wrong');
+                $(currentQuestionAnswers[correctAnswerValue]).addClass('-right');
+            };
+        }
+
+        function displayAnswerMessage(isCorrectAnswer) {
+            var answerMessageRight = answerState.question.find('.trivia-lollacl__answer-message--right');
+            var answerMessageWrong = answerState.question.find('.trivia-lollacl__answer-message--wrong');
+
+            if (isCorrectAnswer) {
+                answerMessageRight.addClass('-right');
+            } else {
+                answerMessageWrong.addClass('-wrong')
+            };
+
+        }
 
         function disableButtons(buttons) {
             buttons.each(function() {
@@ -24,50 +186,8 @@ var VtrTrivia = function() {
             });
         };
 
-        function validateQuestion(e) {
-
-            var selectedAnswer = e.target;
-            var currentQuestion = $(selectedAnswer).parents('.trivia-lollacl__questions-wrapper');
-            var currentQuestionAnswers = currentQuestion.find('.trivia-lollacl__answer');
-            var selectedAnswerValue = currentQuestionAnswers.index(selectedAnswer);
-            var correctAnswerValue = questionResults[currentQuestionIndex];
-            var answerMessageRight = currentQuestion.find('.trivia-lollacl__answer-message--right');
-            var answerMessageWrong = currentQuestion.find('.trivia-lollacl__answer-message--wrong');
-            var breadcrumIndicators = $('.trivia-lollacl__question-indicator');
-            var currentBreadcrumIndicator = breadcrumIndicators[currentQuestionIndex];
-            var breadcrumLines = $('.trivia-lollacl__breadcrumb-line');
-            var currentBreadcrumLine = breadcrumLines[currentQuestionIndex];
-
-            console.log(currentBreadcrumIndicator);
-
-            disableButtons(currentQuestionAnswers);
-
-            $(selectedAnswer).addClass('-selected');
-
-            function validate() {
-                if (selectedAnswerValue === correctAnswerValue) {
-                    $(selectedAnswer).addClass('-right');
-                    answerMessageRight.addClass('-right');
-                    $(currentBreadcrumIndicator).addClass('-right');
-                    $(currentBreadcrumLine).addClass('-active');
-                } else {
-                    $(selectedAnswer).addClass('-wrong');
-                    $(currentQuestionAnswers[correctAnswerValue]).addClass('-right')
-                    answerMessageWrong.addClass('-wrong')
-                    $(currentBreadcrumIndicator).addClass('-wrong');
-                    $(currentBreadcrumLine).addClass('-active');
-                };
-            }
-
-            setTimeout(validate, 500);
-            setTimeout(nextQuestion, 2000);
-        }
-
-        answers.on('click', function(e){
-            validateQuestion(e);
-        });
-
         function nextQuestion() {
+
             if (currentQuestionIndex < questions.length - 1) {
                 var currentQuestion = questions.get(currentQuestionIndex);
                 var nextQuestion = questions.get(currentQuestionIndex + 1);
@@ -78,9 +198,26 @@ var VtrTrivia = function() {
 
                 currentQuestionIndex++;
             } else {
-                window.location.href = '/trivia-lollacl/resultado';
+                window.location.href = '/trivia-lollacl/resultado?respuestascorrectas=' + correctAnswers;
                 console.log('last question');
             }
+        }
+
+        function updateBreadcrumb() {
+            var breadcrumIndicators = $('.trivia-lollacl__question-indicator');
+            var currentBreadcrumIndicator = breadcrumIndicators[currentQuestionIndex];
+            var breadcrumLines = $('.trivia-lollacl__breadcrumb-line');
+            var currentBreadcrumLine = breadcrumLines[currentQuestionIndex];
+
+            var isCorrectAnswer = validateSelectedAnswer();
+
+            if (isCorrectAnswer) {
+                $(currentBreadcrumIndicator).addClass('-right');
+                $(currentBreadcrumLine).addClass('-active');
+            } else {
+                $(currentBreadcrumIndicator).addClass('-wrong');
+                $(currentBreadcrumLine).addClass('-active');
+            };
         }
     }
 };
