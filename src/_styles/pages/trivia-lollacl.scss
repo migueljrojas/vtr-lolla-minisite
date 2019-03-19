@@ -7,6 +7,7 @@
     @include mq(sm) {
         height: 90vh;
         padding-top: 18vh;
+        min-height: 750px;
         padding-bottom: 0;
     }
 
@@ -401,6 +402,8 @@
         width: 100%;
         background: $purple;
         z-index: 2;
+        left: 0;
+        right: 0;
     }
 
     &__breadcrumb-col {
@@ -456,6 +459,21 @@
         &.-wrong {
             border: 1px solid $red;
             background: $red;
+        }
+    }
+
+    &#preguntas {
+        .trivia-lollacl__questions-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            @include mq(sm) {
+                flex-direction: row;
+            }
+
+            .trivia-lollacl__col-right {
+                order: 2;
+            }
         }
     }
 }
