@@ -4,6 +4,13 @@
 var VtrTrivia = function() {
     var preguntas = $('#preguntas');
     var resultados = $('#resultados');
+    var answerText = $('.trivia-lollacl__answer-text');
+
+    var colors = [];
+
+    function indexColorChanger {
+
+    }
 
     if(resultados.length > 0) {
         var facebookShareButton = $('.trivia-lollacl__icon-facebook');

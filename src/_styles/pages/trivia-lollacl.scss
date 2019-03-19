@@ -117,7 +117,7 @@
         }
 
         &--white {
-            background: $white;
+            // background: $white;
             border-radius: 5px;
         }
 
@@ -333,7 +333,7 @@
         overflow: hidden;
         position: absolute;
         width: 80%;
-        bottom: 10px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 50px;
@@ -342,7 +342,6 @@
         align-items: center;
 
         @include mq(sm) {
-            bottom: 20px;
             width: 60%;
         }
 

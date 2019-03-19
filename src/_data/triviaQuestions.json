@@ -1,6 +1,6 @@
 [
     {
-        "image":"/images/trivia/question-icons/01.svg",
+        "image":"/images/trivia/question-icons/01.png",
         "number":"1",
         "options": [
                 "birdmom",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/02.svg",
+        "image":"/images/trivia/question-icons/02.png",
         "number":"2",
         "options": [
             "three people",
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/03.svg",
+        "image":"/images/trivia/question-icons/03.png",
         "number":"3",
         "options": [
             "diablo",
@@ -30,7 +30,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/04.svg",
+        "image":"/images/trivia/question-icons/04.png",
         "number":"4",
         "options": [
             "rosa españa",
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/05.svg",
+        "image":"/images/trivia/question-icons/05.png",
         "number":"5",
         "options": [
             "american sound",
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/06.svg",
+        "image":"/images/trivia/question-icons/06.png",
         "number":"6",
         "options": [
             "saturno",
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/07.svg",
+        "image":"/images/trivia/question-icons/07.png",
         "number":"7",
         "options": [
             "playa dark",
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/08.svg",
+        "image":"/images/trivia/question-icons/08.png",
         "number":"8",
         "options": [
             "portugal man",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/09.svg",
+        "image":"/images/trivia/question-icons/09.png",
         "number":"9",
         "options": [
             "patrulla invernal",
@@ -90,7 +90,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/10.svg",
+        "image":"/images/trivia/question-icons/10.png",
         "number":"10",
         "options": [
             "dj who",
@@ -100,7 +100,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/11.svg",
+        "image":"/images/trivia/question-icons/11.png",
         "number":"11",
         "options": [
             "fish",
@@ -110,7 +110,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/12.svg",
+        "image":"/images/trivia/question-icons/12.png",
         "number":"12",
         "options": [
             "soldado feliz - la floripondio",
@@ -120,7 +120,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/13.svg",
+        "image":"/images/trivia/question-icons/13.png",
         "number":"13",
         "options": [
             "fiesta sad - playa gótica",
@@ -130,7 +130,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/14.svg",
+        "image":"/images/trivia/question-icons/14.png",
         "number":"14",
         "options": [
             "tokyo trompet",
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/15.svg",
+        "image":"/images/trivia/question-icons/15.png",
         "number":"15",
         "options": [
             "tristeza automática - paloma mami",
@@ -150,7 +150,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/16.svg",
+        "image":"/images/trivia/question-icons/16.png",
         "number":"16",
         "options": [
             "ases falsos",
@@ -160,7 +160,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/17.svg",
+        "image":"/images/trivia/question-icons/17.png",
         "number":"17",
         "options": [
             "desayuno - vicentico",
@@ -170,7 +170,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/18.svg",
+        "image":"/images/trivia/question-icons/18.png",
         "number":"18",
         "options": [
             "hotel & casino - snow patrol",
@@ -180,7 +180,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/19.svg",
+        "image":"/images/trivia/question-icons/19.png",
         "number":"19",
         "options": [
             "la vela puerca",
@@ -190,7 +190,7 @@
         ]
     },
     {
-        "image":"/images/trivia/question-icons/20.svg",
+        "image":"/images/trivia/question-icons/20.png",
         "number":"20",
         "options": [
             "veneno dulce",
