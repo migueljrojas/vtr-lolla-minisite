@@ -251,17 +251,23 @@
     &__cta-button {
         display: block;
         margin-bottom: 40px;
+        padding: 10px 0;
+        background: $gold;
+        border-radius: 50px;
 
         @include mq(sm) {
+            width: 70%;
             margin-bottom: 0;
         }
 
-        img {
-            width: 100%;
-
-            @include mq(sm) {
-                width: 70%;
-            }
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+            margin: 0;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
         }
     }
 
