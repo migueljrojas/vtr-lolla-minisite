@@ -4,13 +4,6 @@
 var VtrTrivia = function() {
     var preguntas = $('#preguntas');
     var resultados = $('#resultados');
-    var answerText = $('.trivia-lollacl__answer-text');
-
-    var colors = [];
-
-    function indexColorChanger {
-
-    }
 
     if(resultados.length > 0) {
         var facebookShareButton = $('.trivia-lollacl__icon-facebook');
@@ -104,6 +97,7 @@ var VtrTrivia = function() {
     if (preguntas.length > 0) {
         var questions = $('.trivia-lollacl__questions-wrapper');
         var answers = $('.trivia-lollacl__answer');
+        var questionNumber = $('.trivia-lollacl__question-number');
         var correctAnswers = 0;
 
         var questionResults = [
@@ -117,6 +111,27 @@ var VtrTrivia = function() {
             answers: '',
             correctAnswer: ''
         };
+
+        var colors = [
+            '#ED4634',
+            '#EAF8E8',
+            '#E5FDE9',
+            '#FEE034',
+            '#EB54B1',
+            '#1C77C8',
+            '#EF636E',
+            '#F17B3B',
+            '#F7B731',
+            '#9263CB',
+            '#5A87DA',
+            '#6FC4E9',
+            '#6BE3FC',
+            '#6CC14A',
+            '#74F263',
+            '#439660',
+            '#57A154',
+            '#CAE5DC'
+        ];
 
         var currentQuestionIndex = 0;
 
@@ -194,7 +209,7 @@ var VtrTrivia = function() {
             });
         };
 
-        function nextQuestion() {
+        function nextQuestion(colors) {
 
             if (currentQuestionIndex < questions.length - 1) {
                 var currentQuestion = questions.get(currentQuestionIndex);
@@ -203,6 +218,8 @@ var VtrTrivia = function() {
                 $(currentQuestion).removeClass('-active');
                 $(currentQuestion).addClass('-done');
                 $(nextQuestion).addClass('-active');
+
+                setTimeout(indexColorChanger, 200);
 
                 currentQuestionIndex++;
             } else {
@@ -227,6 +244,14 @@ var VtrTrivia = function() {
                 $(currentBreadcrumLine).addClass('-active');
             };
         }
+
+        function indexColorChanger() {
+            var colorSelector = colors[Math.floor(Math.random() * colors.length)];
+
+            questionNumber.css('color', colorSelector);
+        }
+
+        indexColorChanger();
     }
 };
 
