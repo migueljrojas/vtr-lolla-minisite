@@ -97,7 +97,7 @@ var VtrTrivia = function() {
     if (preguntas.length > 0) {
         var questions = $('.trivia-lollacl__questions-wrapper');
         var answers = $('.trivia-lollacl__answer');
-        var questionNumber = $('.trivia-lollacl__question-number');
+        var questionNumber = $('.trivia-lollacl__hash');
         var correctAnswers = 0;
 
         var questionResults = [

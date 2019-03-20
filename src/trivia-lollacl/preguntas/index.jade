@@ -16,8 +16,8 @@ block content
                             .col-xs-24.col-sm-11.trivia-lollacl__col-right
                                 .trivia-lollacl__group.trivia-lollacl__group--right
                                     h3.trivia-lollacl__question-number
-                                        |#
-                                        span=item.number
+                                        span.trivia-lollacl__hash #
+                                        p=item.number
                                     if item.options
                                         each option,index in item.options
                                             button.trivia-lollacl__answer

@@ -281,8 +281,10 @@
         text-align: center;
         margin-bottom: 40px;
         margin-top: 0;
+        display: flex;
+        justify-content: center;
 
-        span {
+        p {
             font-family: $altFont;
         }
     }
