@@ -1,0 +1,23 @@
+.concert-item {
+    $baseHeight: 50px;
+
+    @for $i from 1 through 12 {
+
+        $value: $i * 0.25;
+
+        // for each $col_#{i} 
+        &[data-duration="#{$value}"] {
+            height: $baseHeight * $value;
+        }
+    }
+
+    @for $i from 1 through 23 {
+
+        $value: $i * 0.25;
+
+        // for each $col_#{i} 
+        &[data-time="#{$value}"] {
+            top: $baseHeight * $value;
+        }
+    }
+}
