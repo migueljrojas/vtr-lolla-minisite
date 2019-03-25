@@ -101,7 +101,7 @@ var VtrTrivia = function() {
         var correctAnswers = 0;
 
         var questionResults = [
-            1,2,3,2,1,2,2,0,3,0,0,1,2,3,1,0,1,2,0,3
+            1,2,3,2,1,2,2,1,3,0,0,1,2,3,1,0,1,2,0,3
         ];
 
         var answerState = {
@@ -113,24 +113,16 @@ var VtrTrivia = function() {
         };
 
         var colors = [
-            '#ED4634',
-            '#EAF8E8',
-            '#E5FDE9',
-            '#FEE034',
-            '#EB54B1',
-            '#1C77C8',
-            '#EF636E',
-            '#F17B3B',
-            '#F7B731',
-            '#9263CB',
-            '#5A87DA',
-            '#6FC4E9',
-            '#6BE3FC',
-            '#6CC14A',
-            '#74F263',
-            '#439660',
-            '#57A154',
-            '#CAE5DC'
+            '#a8125a',
+            '#e72a53',
+            '#00a48f',
+            '#0080b6',
+            '#87cdd7',
+            '#f28d18',
+            '#f9ea5e',
+            '#823B89',
+            '#D30303',
+            '#43BB4D'
         ];
 
         var currentQuestionIndex = 0;
@@ -219,7 +211,7 @@ var VtrTrivia = function() {
                 $(currentQuestion).addClass('-done');
                 $(nextQuestion).addClass('-active');
 
-                setTimeout(indexColorChanger, 200);
+                setTimeout(setIndexColor, 200);
 
                 currentQuestionIndex++;
             } else {
@@ -245,13 +237,13 @@ var VtrTrivia = function() {
             };
         }
 
-        function indexColorChanger() {
+        function setIndexColor() {
             var colorSelector = colors[Math.floor(Math.random() * colors.length)];
 
             questionNumber.css('color', colorSelector);
         }
 
-        indexColorChanger();
+        setIndexColor();
     }
 };
 
