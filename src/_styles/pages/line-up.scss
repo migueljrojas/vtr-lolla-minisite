@@ -74,7 +74,7 @@
     }
 
     &__day-button {
-        background: $gold;
+        background: $lemon;
         text-align: center;
         text-transform: uppercase;
         font-weight: 500;
@@ -114,6 +114,14 @@
         }
     }
 
+    &__selectbox {
+        width: 100%;
+        padding: 10px;
+        
+        @include mq(sm) {
+            display: none;
+        }
+    }
     &__grid-container {
         position: relative;
     }
@@ -132,8 +140,12 @@
             clear: right;
 
             &:nth-child(even) {
-                width: 92%;
                 float: right;
+                width: 81.5%;
+
+                @include mq(sm) {
+                    width: 92%;
+                }
             }
         }
     }
@@ -141,20 +153,25 @@
     &__base-grid {
         display: flex;
         flex-wrap: nowrap;
+
+        .line-up__stage {
+            display: none;
+
+            @include mq(sm) {
+                display: block;
+            }
+        }
     }
 
     &__heading-col {
-        width: 8%;
+        width: 20%;
+
+        @include mq(sm) {
+            width: 8%;
+        }
     }
 
-    &__stage-1,
-    &__stage-2,
-    &__stage-3,
-    &__stage-4,
-    &__stage-5,
-    &__stage-6,
-    &__stage-7,
-    &__stage-8 {
+    &__stage {
         @include trans;
 
         width: 11.5%;
@@ -164,12 +181,16 @@
         }
 
         &.-active {
-            background: $magenta;
+            .line-up__stage-selector,
+            .line-up__concert-item {
+                background: $magenta;
+            }
         }
-
     }
 
     &__stage-selector {
+        @include trans;
+
         border-bottom: 1px solid $black;
         border-left: 1px solid $black;
         height: 100%;
@@ -179,6 +200,7 @@
         align-items: center;
         text-align: center;
         cursor: pointer;
+        padding: 0 10px;
 
         &:last-child {
             // border-right: 1px solid $black;
@@ -195,9 +217,14 @@
         }
 
         &__number {
+            font-size: 12px;
             font-family: altFont;
             position: absolute;
             top: -12px;
+
+            @include mq(sm) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -218,28 +245,46 @@
             top: 0;
             display: flex;
         }
+
+        .line-up__stage {
+            display: none;
+            width: 100%;
+
+            @include mq(sm) {
+                display: block;
+                width: 11.5%;
+            }
+
+            &.-active {
+                display: block;
+            }
+        }
     }
 
     &__concert-item {
         @include trans;
 
         position: absolute;
-        background: $gold;
-        width: 98%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        background: $lemon;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
         font-size: 14px;
+        right: 0;
+        width: 98%;
 
-        &.-active {
-            background: $magenta;
+        @include mq(sm) {
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+
         }
+        //
+        // &.-active {
+        //     background: $magenta;
+        // }
         //15 min Interval
 
         @for $i from 1 through 12 {
