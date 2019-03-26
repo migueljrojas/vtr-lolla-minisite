@@ -11,263 +11,897 @@ block content
                 .line-up__logo-main
                     img(src="../images/lineup/lineup-logo.png")
                 .line-up__subtitle ellos serán los encargados de hacerte saltar y bailar este año en lollapalooza chile
+                
+        .container
+            .row
+                .col-xs-24
+                    .line-up__day-selector
+                        .line-up__day-button.-active(data-target="viernes")
+                            |Viernes 
+                            span.-number 29
+                        .line-up__day-button(data-target="sabado")
+                            |Sábado 
+                            span.-number 30
+                        .line-up__day-button(data-target="domingo")
+                            |Domingo 
+                            span.-number 31
+                    .line-up__grid-container
+                        .line-up__lines-grid
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                            .line-up__lines-grid__line
+                        .line-up__base-grid
+                            .line-up__heading-col
+                                .line-up__hour-row--heading
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 12:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 1:00 pm
+                                .line-up__hour-row 
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 2:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 3:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 4:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 5:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 6:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 7:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 8:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 9:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 10:00 pm
+                                .line-up__hour-row
+                                .line-up__hour-row
+                                    .line-up__hour-row__number 11:00 pm
+                                .line-up__hour-row
+                            .line-up__stage-1(data-button="stage1")
+                                .line-up__stage-selector VTR Stage
+                            .line-up__stage-2(data-button="stage2")
+                                .line-up__stage-selector BANCO DE CHILE Stage
+                            .line-up__stage-3(data-button="stage3")
+                                .line-up__stage-selector ACER Stage
+                            .line-up__stage-4(data-button="stage4")
+                                .line-up__stage-selector Perry´s Stage by VTR
+                            .line-up__stage-5(data-button="stage5")
+                                .line-up__stage-selector LOTUS Stage
+                            .line-up__stage-6(data-button="stage6")
+                                .line-up__stage-selector ALDEA VERDE Stage by ENGIE
+                            .line-up__stage-7(data-button="stage7")
+                                .line-up__stage-selector KIDZAPALOOZA Stage
+                            .line-up__stage-8(data-button="stage8")
+                                .line-up__stage-selector HEINEKEN Lounge Stage
+                        .line-up__concert-grid.-active(data-content="viernes")
+                            .line-up__heading-col
+                            .line-up__stage-1
+                                .line-up__concert-item(data-duration="3", data-time="5", data-list="stage1")
+                                    |The Inspector Cluzo
+                                    br
+                                    span.-number 1:15-2:00
+                                .line-up__concert-item(data-duration="4", data-time="12", data-list="stage1")
+                                    |Francisca Valenzuela
+                                    br
+                                    span.-number 3:00-4:00
+                                .line-up__concert-item(data-duration="4", data-time="20", data-list="stage1")
+                                    |Snow Patrol
+                                    br
+                                    span.-number 5:00-6:00
+                                .line-up__concert-item(data-duration="4", data-time="28", data-list="stage1")
+                                    |Greta Van Fleet
+                                    br
+                                    span.-number 7:00-8:00
+                                .line-up__concert-item(data-duration="5", data-time="38", data-list="stage1")
+                                    |Kendrick Lamar
+                                    br
+                                    span.-number 9:30-10:45
+                            .line-up__stage-2
+                                .line-up__concert-item(data-duration="3", data-time="2", data-list="stage2")
+                                    |Frank's White Canvas
+                                    br
+                                    span.-number 12:30-1:15
+                                .line-up__concert-item(data-duration="4", data-time="8", data-list="stage2")
+                                    |Lany
+                                    br
+                                    span.-number 2:00-3:00
+                                .line-up__concert-item(data-duration="4", data-time="16", data-list="stage2")
+                                    |Los Tres
+                                    br
+                                    span.-number 4:00-5:00
+                                .line-up__concert-item(data-duration="5", data-time="24", data-list="stage2")
+                                    |Vicentico
+                                    br
+                                    span.-number 6:00-7:00
+                                .line-up__concert-item(data-duration="6", data-time="32", data-list="stage2")
+                                    |Lenny Kravitz
+                                    br
+                                    span.-number 8:00-9:30
+                            .line-up__stage-3
+                                .line-up__concert-item(data-duration="3", data-time="5", data-list="stage3")
+                                    |Playa Gótica
+                                    br
+                                    span.-number 1:15-2:00
+                                .line-up__concert-item(data-duration="3", data-time="11", data-list="stage3")
+                                    |Bronko Yotte
+                                    br
+                                    span.-number 2:45-3:30
+                                .line-up__concert-item(data-duration="4", data-time="18", data-list="stage3")
+                                    |Clairo
+                                    br
+                                    span.-number 4:30-5:30
+                                .line-up__concert-item(data-duration="4", data-time="26", data-list="stage3")
+                                    |Jorja Smith
+                                    br
+                                    span.-number 6:30-7:30
+                                .line-up__concert-item(data-duration="4", data-time="34", data-list="stage3")
+                                    |Paulo Londra
+                                    br
+                                    span.-number 8:30-9:30
+                            .line-up__stage-4
+                                .line-up__concert-item(data-duration="3", data-time="4", data-list="stage4")
+                                    |Sistek
+                                    br
+                                    span.-number 1:00-1:45
+                                .line-up__concert-item(data-duration="4", data-time="8", data-list="stage4")
+                                    |Kiddd Keo
+                                    br
+                                    span.-number 2:00-3:00
+                                .line-up__concert-item(data-duration="4", data-time="13", data-list="stage4")
+                                    |Kevinho
+                                    br
+                                    span.-number 3:15-4:15
+                                .line-up__concert-item(data-duration="4", data-time="18", data-list="stage4")
+                                    |Gryffin
+                                    br
+                                    span.-number 4:30-5:30
+                                .line-up__concert-item(data-duration="4", data-time="23", data-list="stage4")
+                                    |Kungs
+                                    br
+                                    span.-number 5:45-6:45
+                                .line-up__concert-item(data-duration="4", data-time="28", data-list="stage4")
+                                    |Fisher
+                                    br
+                                    span.-number 7:00-8:00
+                                .line-up__concert-item(data-duration="4", data-time="33", data-list="stage4")
+                                    |KSHMR
+                                    br
+                                    span.-number 8:15-9:15
+                                .line-up__concert-item(data-duration="5", data-time="38", data-list="stage4")
+                                    |Dimitri Vegas & Like Mike
+                                    br
+                                    span.-number 9:30-10:45
+                            .line-up__stage-5
+                                .line-up__concert-item(data-duration="3", data-time="7", data-list="stage5")
+                                    |DREFQUILA
+                                    br
+                                    span.-number 1:45-2:30
+                                .line-up__concert-item(data-duration="3", data-time="13", data-list="stage5")
+                                    |Amanitas
+                                    br
+                                    span.-number 3:15-4:00
+                                .line-up__concert-item(data-duration="4", data-time="20", data-list="stage5")
+                                    |Green Valley
+                                    br
+                                    span.-number 5:00-6:00
+                                .line-up__concert-item(data-duration="4", data-time="28", data-list="stage5")
+                                    |Caetano, Moreno, Zeca & Tom Veloso
+                                    br
+                                    span.-number 7:00-8:00
+                                .line-up__concert-item(data-duration="4", data-time="35", data-list="stage5")
+                                    |Tokyo Ska Paradise Orchesta
+                                    br
+                                    span.-number 8:45-9:45
+                            .line-up__stage-6
+                                .line-up__concert-item(data-duration="2", data-time="6", data-list="stage6")
+                                    |Tribu Huni Kuin
+                                    br
+                                    span.-number 1:30-2:00
+                                .line-up__concert-item(data-duration="3", data-time="9", data-list="stage6")
+                                    |Kaleema
+                                    br
+                                    span.-number 2:15-3:00
+                                .line-up__concert-item(data-duration="3", data-time="14", data-list="stage6")
+                                    |Elkin Robinson
+                                    br
+                                    span.-number 3:30-4:15
+                                .line-up__concert-item(data-duration="4", data-time="19", data-list="stage6")
+                                    |Chancha Via Circuito
+                                    br
+                                    span.-number 4:45-5:45
+                                .line-up__concert-item(data-duration="4", data-time="24", data-list="stage6")
+                                    |Dj Raff
+                                    br
+                                    span.-number 6:00-7:00
+                            .line-up__stage-7
+                                .line-up__concert-item(data-duration="3", data-time="8", data-list="stage7")
+                                    |Los Frutantes
+                                    br
+                                    span.-number 2:00-2:45
+                                .line-up__concert-item(data-duration="3", data-time="13", data-list="stage7")
+                                    |Subhira
+                                    br
+                                    span.-number 3:15-4:00
+                                .line-up__concert-item(data-duration="3", data-time="19", data-list="stage7")
+                                    |Angel Parra y Los Retornados
+                                    br
+                                    span.-number 4:45-5:30
+                                .line-up__concert-item(data-duration="4", data-time="24", data-list="stage7")
+                                    |Los Pulentos
+                                    br
+                                    span.-number 6:00-7:00
+                            .line-up__stage-8
+                                .line-up__concert-item(data-duration="4", data-time="8", data-list="stage8")
+                                    |Drunvaloop
+                                    br
+                                    span.-number 2:00-3:00
+                                .line-up__concert-item(data-duration="4", data-time="13", data-list="stage8")
+                                    |Compadre
+                                    br
+                                    span.-number 3:15-4:15
+                                .line-up__concert-item(data-duration="4", data-time="18", data-list="stage8")
+                                    |Dj Tressor
+                                    br
+                                    span.-number 4:30-5:30
+                                .line-up__concert-item(data-duration="4", data-time="23", data-list="stage8")
+                                    |Red Rabbit
+                                    br
+                                    span.-number 5:45-6:45
+                                .line-up__concert-item(data-duration="5", data-time="28", data-list="stage8")
+                                    |Melanie Ribbe
+                                    br
+                                    span.-number 7:00-8:15
+                                .line-up__concert-item(data-duration="5", data-time="34", data-list="stage8")
+                                    |Fernanda Arrau
+                                    br
+                                    span.-number 8:30-9:45
+                        .line-up__concert-grid(data-content="sabado")
+                            .line-up__heading-col
+                            .line-up__stage-1
+                                .line-up__concert-item(data-duration="4", data-time="6", data-list="stage1")
+                                    |Monsieur Periné
+                                    br
+                                    span.-number 1:30-2:30
+                                .line-up__concert-item(data-duration="4", data-time="14", data-list="stage1")
+                                    |Ziggy Marley
+                                    br
+                                    span.-number 3:30-4:30
+                                .line-up__concert-item(data-duration="4", data-time="22", data-list="stage1")
+                                    |Bring Me The Horizon
+                                    br
+                                    span.-number 5:30-6:30
+                                .line-up__concert-item(data-duration="4", data-time="30", data-list="stage1")
+                                    |Interpol
+                                    br
+                                    span.-number 7:30-8:30
+                            .line-up__stage-2
+                                .line-up__concert-item(data-duration="3", data-time="3", data-list="stage2")
+                                    |Zaturno & Sole
+                                    br
+                                    span.-number 12:45-1:30
+                                .line-up__concert-item(data-duration="4", data-time="10", data-list="stage2")
+                                    |Kamasi Washington
+                                    br
+                                    span.-number 2:30-3:30
+                                .line-up__concert-item(data-duration="4", data-time="18", data-list="stage2")
+                                    |Portugal. the man
+                                    br
+                                    span.-number 4:30-5:30
+                                .line-up__concert-item(data-duration="4", data-time="26", data-list="stage2")
+                                    |Years & Year
+                                    br
+                                    span.-number 6:30-7:30
+                                .line-up__concert-item(data-duration="6", data-time="34", data-list="stage2")
+                                    |Post Malone
+                                    br
+                                    span.-number 8:30-10:00
+                            .line-up__stage-3
+                                .line-up__concert-item(data-duration="3", data-time="6", data-list="stage3")
+                                    |Humboldt
+                                    br
+                                    span.-number 1:30-2:15
+                                .line-up__concert-item(data-duration="3", data-time="12", data-list="stage3")
+                                    |Ases Falsos
+                                    br
+                                    span.-number 3:00-3:45
+                                .line-up__concert-item(data-duration="3", data-time="18", data-list="stage3")
+                                    |The Fever
+                                    span.-number 333
+                                    span.-number 4:30-5:15
+                                .line-up__concert-item(data-duration="4", data-time="24", data-list="stage3")
+                                    |Pratoje & The Indaggation
+                                    br
+                                    span.-number 6:00-7:00
+                                .line-up__concert-item(data-duration="4", data-time="31", data-list="stage3")
+                                    |Rüfüs Du Sol
+                                    br
+                                    span.-number 7:45-8:45
+                            .line-up__stage-4
+                                .line-up__concert-item(data-duration="4", data-time="6", data-list="stage4")
+                                    |Flak
+                                    br
+                                    span.-number 1:30-2:30
+                                .line-up__concert-item(data-duration="4", data-time="11", data-list="stage4")
+                                    |Bad Gyal
+                                    br
+                                    span.-number 2:45-3:45
+                                .line-up__concert-item(data-duration="4", data-time="16", data-list="stage4")
+                                    |JetLag
+                                    br
+                                    span.-number 4:00-5:00
+                                .line-up__concert-item(data-duration="4", data-time="21", data-list="stage4")
+                                    |Hippie Sabotage
+                                    br
+                                    span.-number 5:15-6:15
+                                .line-up__concert-item(data-duration="4", data-time="26", data-list="stage4")
+                                    |Valentino Khan
+                                    br
+                                    span.-number 6:30-7:30
+                                .line-up__concert-item(data-duration="4", data-time="31", data-list="stage4")
+                                    |Dj Who
+                                    br
+                                    span.-number 7:45-8:45
+                                .line-up__concert-item(data-duration="4", data-time="36", data-list="stage4")
+                                    |RL Grime
+                                    br
+                                    span.-number 9:00-10:00
+                            .line-up__stage-5
+                                .line-up__concert-item(data-duration="3", data-time="7", data-list="stage5")
+                                    |Gianluca
+                                    br
+                                    span.-number 1:45-2:30
+                                .line-up__concert-item(data-duration="3", data-time="13", data-list="stage5")
+                                    |Tomasa Del Real
+                                    br
+                                    span.-number 3:15-4:00
+                                .line-up__concert-item(data-duration="3", data-time="19", data-list="stage5")
+                                    |Alemán
+                                    br
+                                    span.-number 4:45-5:30
+                                .line-up__concert-item(data-duration="2", data-time="24", data-list="stage5")
+                                    |Paloma Mami
+                                    br
+                                    span.-number 6:00-6:30
+                                .line-up__concert-item(data-duration="3", data-time="29", data-list="stage5")
+                                    |Pillanes
+                                    br
+                                    span.-number 7:15-8:00
+                                .line-up__concert-item(data-duration="4", data-time="35", data-list="stage5")
+                                    |Américo
+                                    br
+                                    span.-number 8:45-9:45
+                            .line-up__stage-6
+                                .line-up__concert-item(data-duration="3", data-time="5", data-list="stage6")
+                                    |Kingo Roots & Ras Kadhu
+                                    br
+                                    span.-number 1:15-2:00
+                                .line-up__concert-item(data-duration="3", data-time="10", data-list="stage6")
+                                    |Julio Victoria
+                                    br
+                                    span.-number 2:30-3:15
+                                .line-up__concert-item(data-duration="4", data-time="15", data-list="stage6")
+                                    |A.CHAL
+                                    br
+                                    span.-number 3:45-4:45
+                                .line-up__concert-item(data-duration="3", data-time="20", data-list="stage6")
+                                    |Rubio
+                                    br
+                                    span.-number 5:00-5:45
+                                .line-up__concert-item(data-duration="4", data-time="24", data-list="stage6")
+                                    |Nova Materia
+                                    br
+                                    span.-number 6:00-7:00
+                                .line-up__concert-item(data-duration="4", data-time="29", data-list="stage6")
+                                    |Broka Shade
+                                    br
+                                    span.-number 7:15-8:15
+                                .line-up__concert-item(data-duration="8", data-time="36", data-list="stage6")
+                                    |Valesuchi
+                                    br
+                                    span.-number 9:00-11:00
+                            .line-up__stage-7
+                                .line-up__concert-item(data-duration="3", data-time="6", data-list="stage7")
+                                    |Danzantes
+                                    br
+                                    span.-number 1:30-2:15
+                                .line-up__concert-item(data-duration="3", data-time="12", data-list="stage7")
+                                    |Foji
+                                    br
+                                    span.-number 3:00-3:45
+                                .line-up__concert-item(data-duration="3", data-time="18", data-list="stage7")
+                                    |Show Secreto
+                                    br
+                                    span.-number 4:30-5:15
+                                .line-up__concert-item(data-duration="4", data-time="24", data-list="stage7")
+                                    |Los Pulentos
+                                    br
+                                    span.-number 6:00-7:00
+                            .line-up__stage-8
+                                .line-up__concert-item(data-duration="4", data-time="7", data-list="stage8")
+                                    |Golden Rat
+                                    br
+                                    span.-number 1:45-2:45
+                                .line-up__concert-item(data-duration="4", data-time="12", data-list="stage8")
+                                    |Isa Rojas
+                                    br
+                                    span.-number 3:00-4:00
+                                .line-up__concert-item(data-duration="4", data-time="17", data-list="stage8")
+                                    |Pol Del Sur
+                                    br
+                                    span.-number 4:15-5:15
+                                .line-up__concert-item(data-duration="4", data-time="22", data-list="stage8")
+                                    |Entrópica
+                                    br
+                                    span.-number 5:30-6:30
+                                .line-up__concert-item(data-duration="5", data-time="37", data-list="stage8")
+                                    |Dj Raff
+                                    br
+                                    span.-number 9:15-10:30
+                        .line-up__concert-grid(data-content='domingo')
+                            .line-up__heading-col
+                            .line-up__stage-1
+                                .line-up__concert-item(data-duration="3", data-time="5", data-list="stage1")
+                                    |Fiskales Ad-Hok
+                                    br
+                                    span.-number 1:15-2:00
+                                .line-up__concert-item(data-duration="4", data-time="12", data-list="stage1")
+                                    |Gepe
+                                    br
+                                    span.-number 3:00-4:00
+                                .line-up__concert-item(data-duration="4", data-time="20", data-list="stage1")
+                                    |Juanes
+                                    br
+                                    span.-number 5:00-6:00
+                                .line-up__concert-item(data-duration="4", data-time="29", data-list="stage1")
+                                    |The 
+                                    span.-number 1975
+                                    br
+                                    span.-number 7:15-8:15
+                            .line-up__stage-2
+                                .line-up__concert-item(data-duration="3", data-time="2", data-list="stage2")
+                                    |Adelaida
+                                    br
+                                    span.-number 12:30-1:15
+                                .line-up__concert-item(data-duration="4", data-time="8", data-list="stage2")
+                                    |La Vela Puerca
+                                    br
+                                    span.-number 2:00-3:00
+                                .line-up__concert-item(data-duration="4", data-time="16", data-list="stage2")
+                                    |Troye Sivan
+                                    br
+                                    span.-number 4:00-5:00
+                                .line-up__concert-item(data-duration="5", data-time="24", data-list="stage2")
+                                    |Foals
+                                    br
+                                    span.-number 6:00-7:15
+                                .line-up__concert-item(data-duration="6", data-time="33", data-list="stage2")
+                                    |Sam Smith
+                                    br
+                                    span.-number 8:15-9:45
+                            .line-up__stage-3
+                                .line-up__concert-item(data-duration="2", data-time="4", data-list="stage3")
+                                    |Cigarbox Man
+                                    br
+                                    span.-number 1:00-1:30
+                                .line-up__concert-item(data-duration="3", data-time="8", data-list="stage3")
+                                    |Caramelos de Cianuro
+                                    br
+                                    span.-number 2:00-2:45
+                                .line-up__concert-item(data-duration="3", data-time="14", data-list="stage3")
+                                    |Parcels
+                                    br
+                                    span.-number 3:30-4:15
+                                .line-up__concert-item(data-duration="4", data-time="20", data-list="stage3")
+                                    |Jain
+                                    br
+                                    span.-number 5:00-6:00
+                                .line-up__concert-item(data-duration="4", data-time="27", data-list="stage3")
+                                    |Rosalía
+                                    br
+                                    span.-number 6:45-7:45
+                                .line-up__concert-item(data-duration="4", data-time="34", data-list="stage3")
+                                    |St. Vincent
+                                    br
+                                    span.-number 8:30-9:30
+                            .line-up__stage-4
+                                .line-up__concert-item(data-duration="3", data-time="7", data-list="stage4")
+                                    |Polimá Westcoast
+                                    br
+                                    span.-number 1:45-2:30
+                                .line-up__concert-item(data-duration="4", data-time="11", data-list="stage4")
+                                    |Omar Varela
+                                    br
+                                    span.-number 2:45-3:45
+                                .line-up__concert-item(data-duration="4", data-time="16", data-list="stage4")
+                                    |JetLag
+                                    br
+                                    span.-number 4:00-5:00
+                                .line-up__concert-item(data-duration="4", data-time="21", data-list="stage4")
+                                    |Hippie Sabotage
+                                    br
+                                    span.-number 5:15-6:15
+                                .line-up__concert-item(data-duration="4", data-time="26", data-list="stage4")
+                                    |Valentino Khan
+                                    br
+                                    span.-number 6:30-7:30
+                                .line-up__concert-item(data-duration="4", data-time="31", data-list="stage4")
+                                    |Dj Who
+                                    br
+                                    span.-number 7:45-8:45
+                                .line-up__concert-item(data-duration="4", data-time="36", data-list="stage4")
+                                    |RL Grime
+                                    br
+                                    span.-number 9:00-10:00
+                            .line-up__stage-5
+                                .line-up__concert-item(data-duration="3", data-time="12", data-list="stage5")
+                                    |iLe
+                                    br
+                                    span.-number 3:00-3:45
+                                .line-up__concert-item(data-duration="3", data-time="18", data-list="stage5")
+                                    |Alika
+                                    br
+                                    span.-number 4:30-5:15
+                                .line-up__concert-item(data-duration="3", data-time="23", data-list="stage5")
+                                    |C. Tangana
+                                    br
+                                    span.-number 5:45-6:30
+                                .line-up__concert-item(data-duration="4", data-time="29", data-list="stage5")
+                                    |Joe Vasconcellos
+                                    br
+                                    span.-number 7:15-8:15
+                                .line-up__concert-item(data-duration="4", data-time="36", data-list="stage5")
+                                    |La Floripondio
+                                    br
+                                    span.-number 9:00-10:00
+                            .line-up__stage-6
+                                .line-up__concert-item(data-duration="3", data-time="10", data-list="stage6")
+                                    |Natalia Contesse
+                                    br
+                                    span.-number 2:30-3:15
+                                .line-up__concert-item(data-duration="3", data-time="15", data-list="stage6")
+                                    |Keko Yoma
+                                    br
+                                    span.-number 3:45-4:30
+                                .line-up__concert-item(data-duration="3", data-time="20", data-list="stage6")
+                                    |Newen Afrobeat
+                                    br
+                                    span.-number 5:00-5:45
+                                .line-up__concert-item(data-duration="4", data-time="25", data-list="stage6")
+                                    |Seun Kuti
+                                    br
+                                    span.-number 6:15-7:15
+                                .line-up__concert-item(data-duration="2", data-time="31", data-list="stage6")
+                                    |Batalla de Gallos
+                                    br
+                                    span.-number 7:45-8:15
+                                .line-up__concert-item(data-duration="4", data-time="35", data-list="stage6")
+                                    |Ana Tijoux
+                                    br
+                                    span.-number 8:45-9:45
+                            .line-up__stage-7
+                                .line-up__concert-item(data-duration="3", data-time="8", data-list="stage7")
+                                    |Sophi Lira
+                                    br
+                                    span.-number 2:00-2:45
+                                .line-up__concert-item(data-duration="3", data-time="15", data-list="stage7")
+                                    |Secret Snow
+                                    br
+                                    span.-number 3:45-4:30
+                                .line-up__concert-item(data-duration="5", data-time="22", data-list="stage7")
+                                    |Sinergia Kids Game
+                                    br
+                                    span.-number 5:30-6:45
+                            .line-up__stage-8
+                                .line-up__concert-item(data-duration="4", data-time="10", data-list="stage8")
+                                    |Jefe Indio
+                                    br
+                                    span.-number 2:30-3:30
+                                .line-up__concert-item(data-duration="4", data-time="16", data-list="stage8")
+                                    |Marcela Thais
+                                    br
+                                    span.-number 4:00-5:00
+                                .line-up__concert-item(data-duration="4", data-time="22", data-list="stage8")
+                                    |Sita Abellán
+                                    br
+                                    span.-number 5:30-6:30
+                                .line-up__concert-item(data-duration="4", data-time="28", data-list="stage8")
+                                    |Fantasma
+                                    br
+                                    span.-number 7:00-8:00
+                                .line-up__concert-item(data-duration="4", data-time="33", data-list="stage8")
+                                    |Valesuchi
+                                    br
+                                    span.-number 8:15-9:15
 
-                .line-up__wrapper.line-up__wrapper--left
-                    .line-up__group
-                        .line-up__main-artists
-                            img(src="/images/lineup/lineup-1.png")
-                        .line-up__date
-                            img(src="/images/lineup/lineup-1-date.png")
-                    .line-up__internal-wrapper
-                        p.line-up__text.line-up__text--big
-                            |DIMITRI VEGAS &__ LIKE MIKE 
-                            span ● 
-                            |GRETA VAN FLEET 
-                            span ● 
-                            |VICENTICO 
-                            span ● 
-                            |SNOW PATROL 
-                            span ● 
-                            |Caetano, Moreno, Zeca &__ Tom Veloso 
-                            span ● 
-                            |KSHMR 
-                            span ● 
-                            |JORJA SMITH 
-                            span ●
-                        p.line-up__text.line-up__text--medium
-                            |Paulo Londra Clairo 
-                            span • 
-                            |FISHER 
-                            span • 
-                            |KUNGS 
-                            span • 
-                            |LANY 
-                            span • 
-                            |LOS TRES 
-                            span • 
-                            |FRANCISCA VALENZUELA 
-                            span • 
-                            |GREEN VALLEY 
-                            span • 
-                            |NICOLA CRUZ 
-                            span • 
-                            |TOKYO SKA 
-                            span • 
-                            |PARADISE ORCHESTRA 
-                            span • 
-                            |GRYFFIN MC KEVINHO 
-                            span • 
-                            |SATORI 
-                            span • 
-                            |KIDD KEO 
-                            span • 
-                            |DJ RAFF 
-                            span •
-                        p.line-up__text.line-up__text--small
-                            |Ángel Parra y los Retornados 
-                            span • 
-                            |CHANCHA VÍA CIRCUITO DJ RAFF 
-                            span • 
-                            |THE INSPECTOR CLUZO 
-                            span • 
-                            |FRANK´S WHITE CANVAS 
-                            span • 
-                            |ELKIN ROBINSON 
-                            span • 
-                            |ROOTZ 
-                            span • 
-                            |HI-FI 
-                            span • 
-                            |Los Pulentos 
-                            span • 
-                            |DREFQUILA 
-                            span • 
-                            |BRONKO YOTTE 
-                            span • 
-                            |PLAYA GÓTICA FERNANDA ARRAU 
-                            span • 
-                            |MELANIE RIBBE 
-                            span • 
-                            |AMANITAS 
-                            span • 
-                            |Subhira 
-                            span • 
-                            |KALEEMA
-                            span • 
-                            |COMPADRE SISTEK 
-                            span • 
-                            |RED RABBIT 
-                            span • 
-                            |DJ TRESSOR 
-                            span • 
-                            |DRUNVALOOP 
-                            span • 
-                            |Los Frutantes
 
-                .line-up__wrapper.line-up__wrapper--right
-                    .line-up__group
-                        .line-up__main-artists
-                            img(src="/images/lineup/lineup-2.png")
-                        .line-up__date
-                            img(src="/images/lineup/lineup-2-date.png")
-                    .line-up__internal-wrapper
-                        p.line-up__text.line-up__text--big
-                            |STEVE AOKI 
-                            span ● 
-                            |INTERPOL 
-                            span ● 
-                            |ODESZA 
-                            span ● 
-                            |YEARS &__ YEARS 
-                            span ● 
-                            |BRING ME THE HORIZON 
-                            span ● 
-                            |PORTUGAL THE MAN 
-                            span ● 
-                            |ZIGGY MARLEY 
-                            span ● 
-                            |RL GRIME 
-                            span ● 
-                            |RÜFÜS
-                        p.line-up__text.line-up__text--medium
-                            |DU SOL PROTOJE &__ THE INDIGGNATION 
-                            span • 
-                            |AMéRICO 
-                            span • 
-                            |MONSIEUR PERINÉ 
-                            span • 
-                            |THE FEVER 
-                            strong 333 
-                            |BOOKA SHADE
-                            span • 
-                            |VALENTINO KHAN 
-                            span • 
-                            |DJ WHO 
-                            span • 
-                            |KAMASI WASHINGTON 
-                            span • 
-                            |ASES FALSOS HIPPIE SABOTAGE 
-                            span • 
-                            |JETLAG 
-                            span • 
-                            |ZATURNO
-                        p.line-up__text.line-up__text--small
-                            |PILLANES 
-                            span • 
-                            |SATORI 
-                            span • 
-                            |DJ RAFF 
-                            span • 
-                            |BAD GYAL ROOTZ HI-FI 
-                            span • 
-                            |ALEMÁN 
-                            span • 
-                            |TOMASA DEL REAL 
-                            span • 
-                            |RUBIO 
-                            span • 
-                            |A. CHAL 
-                            span • 
-                            |NOVA MATERIA 
-                            span •
-                            |HUMBOLDT GIANLUCA 
-                            span • 
-                            |Los Pulentos 
-                            span • 
-                            |JULIO VICTORIA 
-                            span • 
-                            |ENTRÓPICA 
-                            span • 
-                            |ISA ROJAS 
-                            span • 
-                            |GOLDENRAT POL DEL SUR 
-                            span • 
-                            |FLAK 
-                            span • 
-                            |Danzante 
-                            span •
-                            |FUNDACIÓN ORQUESTAS JUVENILES E INFANTILES
-
-                .line-up__wrapper.line-up__wrapper--left
-                    .line-up__group
-                        .line-up__main-artists
-                            img(src="/images/lineup/lineup-3.png")
-                        .line-up__date
-                            img(src="/images/lineup/lineup-3-date.png")
-                    .line-up__internal-wrapper
-                        p.line-up__text.line-up__text--big
-                            |TIËSTO 
-                            span ● 
-                            |THE 
-                            strong 1978 
-                            span ● 
-                            |MACKLEMORE 
-                            span ● 
-                            |JUANES 
-                            span ● 
-                            |ROSALÍA 
-                            span ● 
-                            |FOALS 
-                            span ● 
-                            |ST. VINCENT
-                            span ● 
-                            |ZHU 
-                            span ● 
-                            |DON DIABLO 
-                            span ● 
-                            |GEPE 
-                            span ● 
-                            |TROYE SIVAN 
-                            span ● 
-                            |ANA TIJOUX 
-                            span ● 
-                        p.line-up__text.line-up__text--medium
-                            |PARCELS JOE VASCONCELLOS 
-                            span • 
-                            |JAIN 
-                            span • 
-                            |LOUD LUXURY 
-                            span • 
-                            |GTA 
-                            span • 
-                            |PALOMA MAMI 
-                            span • 
-                            |LA VELA PUERCA KHEA 
-                            span •
-                            |LA FLORIPONDIO 
-                            span • 
-                            |SEUN KUTI 
-                            span • 
-                            |C. TANGANA 
-                            span • 
-                            |FISKALES AD-HOK 
-                            span • 
-                            |SINERGIA KIDS GAME CARAMELOS DE CIANURO
-                        p.line-up__text.line-up__text--small
-                            |ROOTZ HI-FI 
-                            span • 
-                            |ALIKA 
-                            span • 
-                            |ADELAIDA 
-                            span • 
-                            |NEWEN AFROBEAT NATALIA CONTESSE 
-                            span • 
-                            |SITA ABELLÁN 
-                            span • 
-                            |OMAR VARELA 
-                            span • 
-                            |CIGARBOX MAN 
-                            span • 
-                            |ILE 
-                            span •
-                            |FANTASNA KEKO YOMA 
-                            span • 
-                            |Sophi Lira 
-                            span • 
-                            |JEFE INDIO 
-                            span • 
-                            |POLIMÁ WESTCOAST
-
+                //- .line-up__wrapper.line-up__wrapper--left
+                //-     .line-up__group
+                //-         .line-up__main-artists
+                //-             img(src="/images/lineup/lineup-1.png")
+                //-         .line-up__date
+                //-             img(src="/images/lineup/lineup-1-date.png")
+                //-     .line-up__internal-wrapper
+                //-         p.line-up__text.line-up__text--big
+                //-             |DIMITRI VEGAS &__ LIKE MIKE 
+                //-             span ● 
+                //-             |GRETA VAN FLEET 
+                //-             span ● 
+                //-             |VICENTICO 
+                //-             span ● 
+                //-             |SNOW PATROL 
+                //-             span ● 
+                //-             |Caetano, Moreno, Zeca &__ Tom Veloso 
+                //-             span ● 
+                //-             |KSHMR 
+                //-             span ● 
+                //-             |JORJA SMITH 
+                //-             span ●
+                //-         p.line-up__text.line-up__text--medium
+                //-             |Paulo Londra Clairo 
+                //-             span • 
+                //-             |FISHER 
+                //-             span • 
+                //-             |KUNGS 
+                //-             span • 
+                //-             |LANY 
+                //-             span • 
+                //-             |LOS TRES 
+                //-             span • 
+                //-             |FRANCISCA VALENZUELA 
+                //-             span • 
+                //-             |GREEN VALLEY 
+                //-             span • 
+                //-             |NICOLA CRUZ 
+                //-             span • 
+                //-             |TOKYO SKA 
+                //-             span • 
+                //-             |PARADISE ORCHESTRA 
+                //-             span • 
+                //-             |GRYFFIN MC KEVINHO 
+                //-             span • 
+                //-             |SATORI 
+                //-             span • 
+                //-             |KIDD KEO 
+                //-             span • 
+                //-             |DJ RAFF 
+                //-             span •
+                //-         p.line-up__text.line-up__text--small
+                //-             |Ángel Parra y los Retornados 
+                //-             span • 
+                //-             |CHANCHA VÍA CIRCUITO DJ RAFF 
+                //-             span • 
+                //-             |THE INSPECTOR CLUZO 
+                //-             span • 
+                //-             |FRANK´S WHITE CANVAS 
+                //-             span • 
+                //-             |ELKIN ROBINSON 
+                //-             span • 
+                //-             |ROOTZ 
+                //-             span • 
+                //-             |HI-FI 
+                //-             span • 
+                //-             |Los Pulentos 
+                //-             span • 
+                //-             |DREFQUILA 
+                //-             span • 
+                //-             |BRONKO YOTTE 
+                //-             span • 
+                //-             |PLAYA GÓTICA FERNANDA ARRAU 
+                //-             span • 
+                //-             |MELANIE RIBBE 
+                //-             span • 
+                //-             |AMANITAS 
+                //-             span • 
+                //-             |Subhira 
+                //-             span • 
+                //-             |KALEEMA
+                //-             span • 
+                //-             |COMPADRE SISTEK 
+                //-             span • 
+                //-             |RED RABBIT 
+                //-             span • 
+                //-             |DJ TRESSOR 
+                //-             span • 
+                //-             |DRUNVALOOP 
+                //-             span • 
+                //-             |Los Frutantes
+                //- 
+                //- .line-up__wrapper.line-up__wrapper--right
+                //-     .line-up__group
+                //-         .line-up__main-artists
+                //-             img(src="/images/lineup/lineup-2.png")
+                //-         .line-up__date
+                //-             img(src="/images/lineup/lineup-2-date.png")
+                //-     .line-up__internal-wrapper
+                //-         p.line-up__text.line-up__text--big
+                //-             |STEVE AOKI 
+                //-             span ● 
+                //-             |INTERPOL 
+                //-             span ● 
+                //-             |ODESZA 
+                //-             span ● 
+                //-             |YEARS &__ YEARS 
+                //-             span ● 
+                //-             |BRING ME THE HORIZON 
+                //-             span ● 
+                //-             |PORTUGAL THE MAN 
+                //-             span ● 
+                //-             |ZIGGY MARLEY 
+                //-             span ● 
+                //-             |RL GRIME 
+                //-             span ● 
+                //-             |RÜFÜS
+                //-         p.line-up__text.line-up__text--medium
+                //-             |DU SOL PROTOJE &__ THE INDIGGNATION 
+                //-             span • 
+                //-             |AMéRICO 
+                //-             span • 
+                //-             |MONSIEUR PERINÉ 
+                //-             span • 
+                //-             |THE FEVER 
+                //-             strong 333 
+                //-             |BOOKA SHADE
+                //-             span • 
+                //-             |VALENTINO KHAN 
+                //-             span • 
+                //-             |DJ WHO 
+                //-             span • 
+                //-             |KAMASI WASHINGTON 
+                //-             span • 
+                //-             |ASES FALSOS HIPPIE SABOTAGE 
+                //-             span • 
+                //-             |JETLAG 
+                //-             span • 
+                //-             |ZATURNO
+                //-         p.line-up__text.line-up__text--small
+                //-             |PILLANES 
+                //-             span • 
+                //-             |SATORI 
+                //-             span • 
+                //-             |DJ RAFF 
+                //-             span • 
+                //-             |BAD GYAL ROOTZ HI-FI 
+                //-             span • 
+                //-             |ALEMÁN 
+                //-             span • 
+                //-             |TOMASA DEL REAL 
+                //-             span • 
+                //-             |RUBIO 
+                //-             span • 
+                //-             |A. CHAL 
+                //-             span • 
+                //-             |NOVA MATERIA 
+                //-             span •
+                //-             |HUMBOLDT GIANLUCA 
+                //-             span • 
+                //-             |Los Pulentos 
+                //-             span • 
+                //-             |JULIO VICTORIA 
+                //-             span • 
+                //-             |ENTRÓPICA 
+                //-             span • 
+                //-             |ISA ROJAS 
+                //-             span • 
+                //-             |GOLDENRAT POL DEL SUR 
+                //-             span • 
+                //-             |FLAK 
+                //-             span • 
+                //-             |Danzante 
+                //-             span •
+                //-             |FUNDACIÓN ORQUESTAS JUVENILES E INFANTILES
+                //- 
+                //- .line-up__wrapper.line-up__wrapper--left
+                //-     .line-up__group
+                //-         .line-up__main-artists
+                //-             img(src="/images/lineup/lineup-3.png")
+                //-         .line-up__date
+                //-             img(src="/images/lineup/lineup-3-date.png")
+                //-     .line-up__internal-wrapper
+                //-         p.line-up__text.line-up__text--big
+                //-             |TIËSTO 
+                //-             span ● 
+                //-             |THE 
+                //-             strong 1978 
+                //-             span ● 
+                //-             |MACKLEMORE 
+                //-             span ● 
+                //-             |JUANES 
+                //-             span ● 
+                //-             |ROSALÍA 
+                //-             span ● 
+                //-             |FOALS 
+                //-             span ● 
+                //-             |ST. VINCENT
+                //-             span ● 
+                //-             |ZHU 
+                //-             span ● 
+                //-             |DON DIABLO 
+                //-             span ● 
+                //-             |GEPE 
+                //-             span ● 
+                //-             |TROYE SIVAN 
+                //-             span ● 
+                //-             |ANA TIJOUX 
+                //-             span ● 
+                //-         p.line-up__text.line-up__text--medium
+                //-             |PARCELS JOE VASCONCELLOS 
+                //-             span • 
+                //-             |JAIN 
+                //-             span • 
+                //-             |LOUD LUXURY 
+                //-             span • 
+                //-             |GTA 
+                //-             span • 
+                //-             |PALOMA MAMI 
+                //-             span • 
+                //-             |LA VELA PUERCA KHEA 
+                //-             span •
+                //-             |LA FLORIPONDIO 
+                //-             span • 
+                //-             |SEUN KUTI 
+                //-             span • 
+                //-             |C. TANGANA 
+                //-             span • 
+                //-             |FISKALES AD-HOK 
+                //-             span • 
+                //-             |SINERGIA KIDS GAME CARAMELOS DE CIANURO
+                //-         p.line-up__text.line-up__text--small
+                //-             |ROOTZ HI-FI 
+                //-             span • 
+                //-             |ALIKA 
+                //-             span • 
+                //-             |ADELAIDA 
+                //-             span • 
+                //-             |NEWEN AFROBEAT NATALIA CONTESSE 
+                //-             span • 
+                //-             |SITA ABELLÁN 
+                //-             span • 
+                //-             |OMAR VARELA 
+                //-             span • 
+                //-             |CIGARBOX MAN 
+                //-             span • 
+                //-             |ILE 
+                //-             span •
+                //-             |FANTASNA KEKO YOMA 
+                //-             span • 
+                //-             |Sophi Lira 
+                //-             span • 
+                //-             |JEFE INDIO 
+                //-             span • 
+                //-             |POLIMÁ WESTCOAST
+                //- 
             //-     .line-up__logo-kids
             //-         img(src="../images/kidsloolla.png")
             //-     p.line-up__text

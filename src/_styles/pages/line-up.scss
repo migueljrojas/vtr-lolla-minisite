@@ -1,5 +1,6 @@
 .line-up {
     $lu: &;
+    $baseHeight: 25px;
 
     background: $turqoise url('/images/lineup/back-lineup.png') no-repeat;
     background-size: cover;
@@ -8,12 +9,13 @@
         padding: 40px 0;
 
         @include mq(sm) {
-            padding: 120px 0 50px 0;
+            padding: 120px 0 0 0;
         }
     }
 
     &__col {
         display: block;
+        margin-top: 60px;
         margin-bottom: 40px;
     }
 
@@ -55,156 +57,361 @@
         }
     }
 
-    &__wrapper {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
+    &__day-selector {
+        width: 70%;
+        padding: 10px;
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        &--left {
-            margin-left: auto;
-            align-items: flex-start;
+        @include mq(sm) {
+            width: 40%;
+            padding: 0;
+        }
+    }
 
-            #{$lu}__main-artists {
-                order: 2;
+    &__day-button {
+        background: $gold;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+        padding: 5px 0;
+        width: 66px;
+        z-index: 1;
 
-                @include mq(sm) {
-                    order: 1;
-                }
-            }
-
-            #{$lu}__date {
-                order: 1;
-
-                @include mq(sm) {
-                    order: 2;
-                }
-            }
+        @include mq(sm) {
+            width: 32%;
         }
 
-        &--right {
-            margin-right: auto;
-            align-items: flex-end;
+        &:after {
+            @include trans;
+        }
 
-            #{$lu}__main-artists {
-                order: 2;
-                margin-left: auto;
-            }
+        &.-active {
+            background: $magenta;
 
-            #{$lu}__date {
-                order: 1;
-            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+                background: $magenta;
+                width: 46px;
+                height: 46px;
+                bottom: -23px;
+                z-index: -1;
 
-            #{$lu}__text {
-                text-align: right;
+                @include mq(sm) {
+                    bottom: -7.5px;
+                    height: 15px;
+                    width: 15px;
+                }
             }
         }
     }
 
-    &__group {
+    &__grid-container {
+        position: relative;
+    }
+
+    &__lines-grid {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        text-align: right;
+
+        &__line {
+            height: $baseHeight * 2;
+            border-bottom: 1px solid $black;
+            width: 100%;
+            clear: right;
+
+            &:nth-child(even) {
+                width: 92%;
+                float: right;
+            }
+        }
+    }
+
+    &__base-grid {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__heading-col {
+        width: 8%;
+    }
+
+    &__stage-1,
+    &__stage-2,
+    &__stage-3,
+    &__stage-4,
+    &__stage-5,
+    &__stage-6,
+    &__stage-7,
+    &__stage-8 {
+        @include trans;
+
+        width: 11.5%;
+        height: 70px;
+        position: relative;
+        @include mq(sm) {
+        }
+
+        &.-active {
+            background: $magenta;
+        }
+
+    }
+
+    &__stage-selector {
+        border-bottom: 1px solid $black;
+        border-left: 1px solid $black;
+        height: 100%;
         width: 100%;
         display: flex;
-        margin-bottom: 20px;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
 
-        @include mq(sm) {
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-direction: row;
+        &:last-child {
+            // border-right: 1px solid $black;
         }
     }
 
-    &__internal-wrapper {
-        width: 90%;
-    }
-
-    &__main-artists {
-        width: 90%;
-        margin-bottom: 20px;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        @include mq(sm) {
-            width: auto;
-            margin-bottom: 0;
-        }
-    }
-
-    &__date {
+    &__hour-row {
+        height: $baseHeight * 2;
         width: 100%;
-        margin-bottom: 20px;
+        position: relative;
 
-        @include mq(sm) {
-            width: auto;
-            margin-bottom: 0;
+        &--heading {
+            height: 70px;
         }
 
-        img {
-            width: 100%;
+        &__number {
+            font-family: altFont;
+            position: absolute;
+            top: -12px;
+        }
+    }
+
+    &__concert-grid {
+        @include trans;
+
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+
+        &.-active {
             height: auto;
+            opacity: 1;
+            overflow: visible;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
         }
     }
 
-    &__text {
-        color: $white;
-        font-weight: 500;
-        margin: 0;
-        text-transform: uppercase;
+    &__concert-item {
+        @include trans;
 
-        span {
-            color: $purple;
+        position: absolute;
+        background: $gold;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+
+        &.-active {
+            background: $magenta;
         }
+        //15 min Interval
 
-        strong {
-            font-family: $altFont;
-        }
+        @for $i from 1 through 12 {
 
-        &--big {
-            font-size: 24px;
+            $value: $i;
 
-            @include mq(sm) {
-                font-size: 36px;
+            // for each $col_#{i}
+            &[data-duration="#{$value}"] {
+                height: ($baseHeight * $value) - 1px;
             }
         }
 
-        &--medium {
-            font-size: 18px;
+        @for $i from 1 through 45 {
 
-            @include mq(sm) {
-                font-size: 28px;
+            $value: $i;
+            $headingHeight: 70px;
+            // for each $col_#{i}
+            &[data-time="#{$value}"] {
+                top: $headingHeight + ($baseHeight * $value);
             }
         }
-
-        &--small {
-            font-size: 14px;
-
-            @include mq(sm) {
-                font-size: 20px;
-            }
-        }
-        // text-align: center;
-        // color: $white;
-        // font-weight: 500;
-        // font-size: 16px;
-        // margin-top: 0;
-        // margin-bottom: 20px;
-        //
-        // span {
-        //     display: block;
-        //     font-family: $altFont;
-        //     font-weight: 700;
-        //     font-size: 1.5em;
-        // }
-        //
-        // strong {
-        //     font-size: 20px;
-        //     font-weight: 500;
-        // }
     }
-
+    // &__wrapper {
+    //     width: 90%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin-bottom: 40px;
+    //
+    //     &--left {
+    //         margin-left: auto;
+    //         align-items: flex-start;
+    //
+    //         #{$lu}__main-artists {
+    //             order: 2;
+    //
+    //             @include mq(sm) {
+    //                 order: 1;
+    //             }
+    //         }
+    //
+    //         #{$lu}__date {
+    //             order: 1;
+    //
+    //             @include mq(sm) {
+    //                 order: 2;
+    //             }
+    //         }
+    //     }
+    //
+    //     &--right {
+    //         margin-right: auto;
+    //         align-items: flex-end;
+    //
+    //         #{$lu}__main-artists {
+    //             order: 2;
+    //             margin-left: auto;
+    //         }
+    //
+    //         #{$lu}__date {
+    //             order: 1;
+    //         }
+    //
+    //         #{$lu}__text {
+    //             text-align: right;
+    //         }
+    //     }
+    // }
+    //
+    // &__group {
+    //     width: 100%;
+    //     display: flex;
+    //     margin-bottom: 20px;
+    //     flex-direction: column;
+    //
+    //     @include mq(sm) {
+    //         justify-content: space-between;
+    //         align-items: flex-end;
+    //         flex-direction: row;
+    //     }
+    // }
+    //
+    // &__internal-wrapper {
+    //     width: 90%;
+    // }
+    //
+    // &__main-artists {
+    //     width: 90%;
+    //     margin-bottom: 20px;
+    //
+    //     img {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    //
+    //     @include mq(sm) {
+    //         width: auto;
+    //         margin-bottom: 0;
+    //     }
+    // }
+    //
+    // &__date {
+    //     width: 100%;
+    //     margin-bottom: 20px;
+    //
+    //     @include mq(sm) {
+    //         width: auto;
+    //         margin-bottom: 0;
+    //     }
+    //
+    //     img {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    // }
+    //
+    // &__text {
+    //     color: $white;
+    //     font-weight: 500;
+    //     margin: 0;
+    //     text-transform: uppercase;
+    //
+    //     span {
+    //         color: $purple;
+    //     }
+    //
+    //     strong {
+    //         font-family: $altFont;
+    //     }
+    //
+    //     &--big {
+    //         font-size: 24px;
+    //
+    //         @include mq(sm) {
+    //             font-size: 36px;
+    //         }
+    //     }
+    //
+    //     &--medium {
+    //         font-size: 18px;
+    //
+    //         @include mq(sm) {
+    //             font-size: 28px;
+    //         }
+    //     }
+    //
+    //     &--small {
+    //         font-size: 14px;
+    //
+    //         @include mq(sm) {
+    //             font-size: 20px;
+    //         }
+    //     }
+    //     // text-align: center;
+    //     // color: $white;
+    //     // font-weight: 500;
+    //     // font-size: 16px;
+    //     // margin-top: 0;
+    //     // margin-bottom: 20px;
+    //     //
+    //     // span {
+    //     //     display: block;
+    //     //     font-family: $altFont;
+    //     //     font-weight: 700;
+    //     //     font-size: 1.5em;
+    //     // }
+    //     //
+    //     // strong {
+    //     //     font-size: 20px;
+    //     //     font-weight: 500;
+    //     // }
+    // }
+    //
     // &__logo-kids {
     //     text-align: center;
     //     margin-bottom: 20px;
