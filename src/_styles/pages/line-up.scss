@@ -98,17 +98,18 @@
                 content: '';
                 position: absolute;
                 left: 50%;
-                transform: translateX(-50%) rotate(45deg);
-                background: $magenta;
-                width: 46px;
-                height: 46px;
-                bottom: -23px;
-                z-index: -1;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                top: 100%;
+                border-top: 20px solid $magenta;
+                border-left: 33px solid transparent;
+                border-right: 33px solid transparent;
 
                 @include mq(sm) {
-                    bottom: -7.5px;
-                    height: 15px;
-                    width: 15px;
+                    border-top: 10px solid $magenta;
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
                 }
             }
         }
@@ -117,11 +118,14 @@
     &__selectbox {
         width: 100%;
         padding: 10px;
-        
+        border: 2px solid $lemon;
+        appearance: none;
+
         @include mq(sm) {
             display: none;
         }
     }
+
     &__grid-container {
         position: relative;
     }
