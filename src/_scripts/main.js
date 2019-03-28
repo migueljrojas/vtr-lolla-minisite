@@ -10,6 +10,7 @@ var DataSwitcher = require('../_modules/data-switcher/data-switcher');
 var DataToggle = require('../_modules/data-switcher/data-toggle');
 var VtrShuffle = require('./vtr-shuffle');
 var VtrTrivia = require('./vtr-trivia');
+var VtrPlaystage = require('./vtr-playstage');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
@@ -19,4 +20,5 @@ $(function() {
     new VtrTrivia();
     new DataSwitcher();
     new DataToggle();
+    new VtrPlaystage();
 });
