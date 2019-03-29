@@ -1,6 +1,5 @@
 
 .trivia-lollacl,
-.vtr-playstage,
 .azotea-vtr,
 .vtr-shuffle {
     &--shuffle-background {
@@ -9,10 +8,6 @@
 
     &--trivia-background {
         background: $magenta url("/images/back-internas.png") top center / contain;
-    }
-
-    &--playstage-background {
-        background: $blue url("/images/back-internas.png") top center / contain;
     }
 
     &--azotea-background {
