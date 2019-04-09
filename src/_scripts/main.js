@@ -11,6 +11,7 @@ var DataToggle = require('../_modules/data-switcher/data-toggle');
 var VtrShuffle = require('./vtr-shuffle');
 var VtrTrivia = require('./vtr-trivia');
 var VtrPlaystage = require('./vtr-playstage');
+var VtrPlaystageAbm = require('./vtr-playstage-abm');
 var Slider = require('../_modules/slider/slider');
 
 $(function() {
@@ -23,4 +24,5 @@ $(function() {
     new DataToggle();
     new VtrPlaystage();
     new Slider();
+    new VtrPlaystageAbm();
 });

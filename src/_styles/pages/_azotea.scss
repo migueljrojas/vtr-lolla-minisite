@@ -1,0 +1,107 @@
+/* AZOTEA */
+
+.azotea-vtr__subtitle {
+    color: #203e60;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-shadow: none;
+  }
+  
+  .azotea-vtr__text {
+    color: #203e60!important;
+    font-size: 20px;
+  }
+  
+  .azotea-vtr_item_text {
+    font-size: 20px;
+    color: #072750;
+    line-height: 24px;
+    font-weight: 500;
+    margin:20px 0;
+  }
+  
+  .azotea-vtr_item_text_big {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .azotea-vtr_item_text_big _number {
+    font-weight: bold;
+  }
+  
+  .azotea-vtr ul {
+    margin:25px 0;
+  }
+  
+  .azotea-vtr li {
+    width: 90%;
+    text-align: center;
+    
+  }
+  
+  .btn-fucsia {
+    background-color:#e62953;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  
+  .azotea-icono {
+    height: 180px;
+    position: relative;
+  }
+  .azotea-icono img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .divisor-vertical {
+    background: #072750;
+        height: 380px;
+      width: 2px;
+      float: left;
+      display: none;
+  }
+  
+  .fotos-izq, .fotos-der {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .fotos-izq {
+    left: -7%;
+    
+  }
+  
+  .fotos-der {
+    right: -7%;
+  
+  }
+  
+  @media (min-width: 768px) {
+    
+    .fotos-izq, .fotos-der {
+        display: block;
+    }
+    .azotea-vtr li {
+        float: left;
+        width: 33%;
+        text-align: center;
+        padding: 0 25px;
+    }
+    
+    .divisor-vertical {
+        display: block;
+    }
+  }
+  
+  /* termina azotea*/
+  

@@ -1,0 +1,58 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+     #login-form
+        ._box
+            input#input-password(type="password")
+            button#login-button Login
+     main#vtr-playstage-abm.vtr-playstage-abm.vtr-playstage.vtr-playstage--playstage-background
+        .container
+            .row
+                .col-xs-24
+                    .vtr-playstage-abm__heading
+                        button.vtr-playstage-abm__button#loadimages(disabled) Cargar imagenes para moderar
+                    
+                    form.vtr-playstage-abm__form.-hidden
+                        .vtr-playstage-abm__form__loader
+                            h3 Cargando
+                            .lds-ellipsis
+                                div
+                                div
+                                div
+                                div
+
+                        .vtr-playstage-abm__form__body
+                            //- .vtr-playstage-abm__form__group
+                            //-     .vtr-playstage-abm__form__group__image
+                            //-         img(src="https://picsum.photos/400/400?image=0")
+                            //-     .vtr-playstage-abm__form__group__fields
+                            //-         input(type="hidden", name="id")
+                            //-         input(type="hidden", name="reviewed")
+                            //-         .vtr-playstage-abm__form__fieldgroup
+                            //-             h4 Aprobar
+                            //-             label(for="approved") Si
+                            //-             input(type="radio", name="approval", id="approved", value="1")
+                            //-             label(for="unapproved") No
+                            //-             input(type="radio", name="approval", id="unapproved", value="0")
+                            //-         .vtr-playstage-abm__form__fieldgroup
+                            //-             select(id="category", name="category")
+                            //-                 option(selected, disabled, hidden, value="0") Seleccionar categoria
+                            //-                 option(value="1") VTR Stage
+                            //-                 option(value="2") Perry's Stage by VTR
+                            //-                 option(value="3") Banco Chile Stage
+                            //-                 option(value="4") Acer Stage
+                            //-                 option(value="5") Lotus Stage
+                            //-                 option(value="6") Kidzapalooza
+                            //-                 option(value="7") Heineken Lounge Stage
+                            //-                 option(value="8") VTR Playstage
+                            //-                 option(value="9") Revive Lolla CL
+
+                            
+
+                        .vtr-playstage-abm__form__submit
+                            button.vtr-playstage-abm__button#saveimages(disabled, type="submit") Guardar cambios
+                    
